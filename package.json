@@ -1,0 +1,33 @@
+{
+  "name": "react-cubes",
+  "version": "0.0.1",
+  "description": "ui building blocks for reactjs based applications",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "webpack -w -d",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kashjs/react-cubes.git"
+  },
+  "keywords": [
+    "react-cubes"
+  ],
+  "author": "kashyaphp@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kashjs/react-cubes/issues"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "webpack": "^1.13.2"
+  },
+  "homepage": "https://github.com/kashjs/react-cubes#readme"
+}
