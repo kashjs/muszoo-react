@@ -57,11 +57,11 @@
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _Hello = __webpack_require__(/*! react-cubes/Hello */ 172);
+	var _Hello = __webpack_require__(/*! muszoo-react/Hello */ 172);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	_reactDom2.default.render(_react2.default.createElement(_Hello.Hello, null), document.getElementById('react-cubes'));
+	_reactDom2.default.render(_react2.default.createElement(_Hello.Hello, null), document.getElementById('muszoo-react'));
 
 /***/ },
 /* 1 */

@@ -1,5 +1,5 @@
-# react-cubes
-ui building blocks for reactjs based UI
+# muszoo-react
+ui building blocks for reactjs based UI (built for muszoo.com)
 
 ### Getting Started for developers:
 

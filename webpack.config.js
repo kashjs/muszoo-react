@@ -9,7 +9,7 @@ module.exports = {
     resolve: {
         extensions: ['', '.js', '.md', '.txt'],
         alias: {
-            'react-cubes': __dirname + '/src',
+            'muszoo-react': __dirname + '/src',
         },
     },
     module: {

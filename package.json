@@ -1,5 +1,5 @@
 {
-  "name": "react-cubes",
+  "name": "muszoo-react",
   "version": "0.0.1",
   "description": "ui building blocks for reactjs based applications",
   "main": "./src/index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kashjs/react-cubes.git"
+    "url": "git+https://github.com/kashjs/muszoo-react.git"
   },
   "keywords": [
-    "react-cubes"
+    "muszoo-react"
   ],
   "author": "kashyaphp@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kashjs/react-cubes/issues"
+    "url": "https://github.com/kashjs/muszoo-react/issues"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
@@ -29,5 +29,5 @@
     "react-dom": "^15.3.2",
     "webpack": "^1.13.2"
   },
-  "homepage": "https://github.com/kashjs/react-cubes#readme"
+  "homepage": "https://github.com/kashjs/muszoo-react#readme"
 }
