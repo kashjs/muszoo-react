@@ -8,5 +8,9 @@ export class MZButton extends React.Component {
 }
 
 MZButton.propTypes = {
-    btnType: React.PropTypes.string.isRequired
-}
+    btnType: React.PropTypes.string
+};
+
+MZButton.defaultProps = {
+    btnType: ''
+};

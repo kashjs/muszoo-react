@@ -6,8 +6,8 @@ ol {
   padding: 0; }
 
 body {
-  padding: 20px;
-  font: 100% Helvetica, sans-serif;
+  padding: 30px 20px;
+  font-family: 'Open Sans', sans-serif;
   background-color: #efefef; }
 
 .mz-button {
@@ -46,3 +46,13 @@ body {
     padding: 4px;
     margin-left: 4px;
     color: white; }
+
+.mz-navbar {
+  background-color: #333;
+  color: white;
+  padding: 8px; }
+  .mz-navbar.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; }

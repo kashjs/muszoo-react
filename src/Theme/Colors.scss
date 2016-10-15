@@ -1,6 +1,12 @@
-$mzCText: #333;
+// Color palette
 $mzCD0: white;
 $mzCD1: #3498db;
 $mzCD2: #2ecc71;
 $mzCD3: #e67e22;
 $mzCD4: #e74c3c;
+$mzCD5: #333;
+
+// Component Specifics
+$mzCText0: $mzCD5;
+$mzCText1: $mzCD0;
+$mzCNav: $mzCD5;

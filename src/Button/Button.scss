@@ -1,6 +1,6 @@
 $btnHeight: 12px;
 
-@mixin generateButton($color, $padding, $textColor: $mzCD0) {
+@mixin generateButton($color, $padding, $textColor: $mzCText1) {
   border: darken($color, 20%);
   background: $color;
   padding: $padding;
@@ -11,7 +11,7 @@ $btnHeight: 12px;
 .mz-button {
   @include elementReset();
 
-  @include generateButton($mzCD0, $mzPL2, $mzCText);
+  @include generateButton($mzCD0, $mzPL2, $mzCText0);
 
   &.prime {
     @include generateButton($mzCD1, $mzPL2);

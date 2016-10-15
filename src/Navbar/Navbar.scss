@@ -1,0 +1,12 @@
+.mz-navbar {
+  background-color: $mzCNav;
+  color: $mzCText1;
+  padding: $mzPL3;
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
