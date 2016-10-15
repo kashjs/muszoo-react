@@ -1,10 +1,18 @@
+var path = require("path");
+
 module.exports = {
     entry: {
-        docs: "./docs/js/app.js"
+        docs: "./docs/index.js"
+    },
+    devServer: {
+        contentBase: "./docs/",
+        inline: true,
+        port: 4000
     },
     output: {
         path: __dirname + "/docs/dist",
-        filename: "app.js"
+        publicPath: path.resolve(__dirname, "/dist"),
+        filename: "index.js"
     },
     resolve: {
         extensions: ['', '.js', '.md', '.txt'],
@@ -14,6 +22,10 @@ module.exports = {
     },
     module: {
         loaders: [
+            {
+                test: /\.scss$/,
+                loaders: ['style', 'css', 'sass']
+            },
             {
                 test: /\.js$/,
                 loaders: [

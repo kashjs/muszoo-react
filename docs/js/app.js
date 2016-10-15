@@ -1,6 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import {Hello} from 'muszoo-react/Hello';
+import {Examples} from './Examples';
 
-
-ReactDOM.render(<Hello />, document.getElementById('muszoo-react'));
+export class App extends React.Component {
+    render() {
+        return <div>
+            <Examples></Examples>
+        </div>
+    }
+}

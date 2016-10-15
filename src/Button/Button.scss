@@ -1,0 +1,31 @@
+$btnHeight: 12px;
+
+@mixin generateButton($color, $padding, $textColor: $mzCD0) {
+  border: darken($color, 20%);
+  background: $color;
+  padding: $padding;
+  margin-left: $padding;
+  color: $textColor;
+}
+
+.mz-button {
+  @include elementReset();
+
+  @include generateButton($mzCD0, $mzPL2, $mzCText);
+
+  &.prime {
+    @include generateButton($mzCD1, $mzPL2);
+  }
+
+  &.success {
+    @include generateButton($mzCD2, $mzPL2);
+  }
+
+  &.warning {
+    @include generateButton($mzCD3, $mzPL2);
+  }
+
+  &.danger {
+    @include generateButton($mzCD4, $mzPL2);
+  }
+}

@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/dist";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -42,9 +42,9 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/*!************************!*\
-  !*** ./docs/js/app.js ***!
-  \************************/
+/*!***********************!*\
+  !*** ./docs/index.js ***!
+  \***********************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -57,11 +57,11 @@
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _Hello = __webpack_require__(/*! muszoo-react/Hello */ 172);
+	var _App = __webpack_require__(/*! ./js/App */ 172);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	_reactDom2.default.render(_react2.default.createElement(_Hello.Hello, null), document.getElementById('muszoo-react'));
+	_reactDom2.default.render(_react2.default.createElement(_App.App, null), document.getElementById('muszoo-react'));
 
 /***/ },
 /* 1 */
@@ -21945,9 +21945,144 @@
 
 /***/ },
 /* 172 */
-/*!****************************!*\
-  !*** ./src/Hello/index.js ***!
-  \****************************/
+/*!************************!*\
+  !*** ./docs/js/App.js ***!
+  \************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.App = undefined;
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _Examples = __webpack_require__(/*! ./Examples */ 173);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var App = exports.App = function (_React$Component) {
+	    _inherits(App, _React$Component);
+	
+	    function App() {
+	        _classCallCheck(this, App);
+	
+	        return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+	    }
+	
+	    _createClass(App, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                null,
+	                _react2.default.createElement(_Examples.Examples, null)
+	            );
+	        }
+	    }]);
+	
+	    return App;
+	}(_react2.default.Component);
+
+/***/ },
+/* 173 */
+/*!*****************************!*\
+  !*** ./docs/js/Examples.js ***!
+  \*****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.Examples = undefined;
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _Button = __webpack_require__(/*! muszoo-react/Button */ 174);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Examples = exports.Examples = function (_React$Component) {
+	    _inherits(Examples, _React$Component);
+	
+	    function Examples() {
+	        _classCallCheck(this, Examples);
+	
+	        return _possibleConstructorReturn(this, (Examples.__proto__ || Object.getPrototypeOf(Examples)).apply(this, arguments));
+	    }
+	
+	    _createClass(Examples, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                null,
+	                _react2.default.createElement(
+	                    'h1',
+	                    null,
+	                    'Buttons'
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    null,
+	                    'Default'
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { btnType: 'prime' },
+	                    'Prime'
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { btnType: 'success' },
+	                    'Success'
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { btnType: 'warning' },
+	                    'Warning'
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { btnType: 'danger' },
+	                    'Danger'
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return Examples;
+	}(_react2.default.Component);
+
+/***/ },
+/* 174 */
+/*!*****************************!*\
+  !*** ./src/Button/index.js ***!
+  \*****************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -21956,23 +22091,23 @@
 	  value: true
 	});
 	
-	var _Hello = __webpack_require__(/*! ./Hello */ 173);
+	var _Button = __webpack_require__(/*! ./Button */ 175);
 	
-	Object.keys(_Hello).forEach(function (key) {
+	Object.keys(_Button).forEach(function (key) {
 	  if (key === "default" || key === "__esModule") return;
 	  Object.defineProperty(exports, key, {
 	    enumerable: true,
 	    get: function get() {
-	      return _Hello[key];
+	      return _Button[key];
 	    }
 	  });
 	});
 
 /***/ },
-/* 173 */
-/*!****************************!*\
-  !*** ./src/Hello/Hello.js ***!
-  \****************************/
+/* 175 */
+/*!******************************!*\
+  !*** ./src/Button/Button.js ***!
+  \******************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21980,7 +22115,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-	exports.Hello = undefined;
+	exports.MZButton = undefined;
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
@@ -21996,29 +22131,34 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var Hello = exports.Hello = function (_React$Component) {
-	    _inherits(Hello, _React$Component);
+	var MZButton = exports.MZButton = function (_React$Component) {
+	    _inherits(MZButton, _React$Component);
 	
-	    function Hello() {
-	        _classCallCheck(this, Hello);
+	    function MZButton() {
+	        _classCallCheck(this, MZButton);
 	
-	        return _possibleConstructorReturn(this, (Hello.__proto__ || Object.getPrototypeOf(Hello)).apply(this, arguments));
+	        return _possibleConstructorReturn(this, (MZButton.__proto__ || Object.getPrototypeOf(MZButton)).apply(this, arguments));
 	    }
 	
-	    _createClass(Hello, [{
+	    _createClass(MZButton, [{
 	        key: 'render',
 	        value: function render() {
+	            var className = 'mz-button ' + this.props.btnType;
 	            return _react2.default.createElement(
-	                'h1',
-	                null,
-	                'Hello React!!'
+	                'button',
+	                { className: className },
+	                this.props.children
 	            );
 	        }
 	    }]);
 	
-	    return Hello;
+	    return MZButton;
 	}(_react2.default.Component);
+	
+	MZButton.propTypes = {
+	    btnType: _react2.default.PropTypes.string.isRequired
+	};
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=app.js.map
+//# sourceMappingURL=index.js.map

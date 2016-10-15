@@ -2,6 +2,6 @@ import React from 'react';
 
 export class Hello extends React.Component {
     render() {
-        return <h1>Hello React!!</h1>;
+        return <h1>Hello React! yey</h1>;
     }
 }
