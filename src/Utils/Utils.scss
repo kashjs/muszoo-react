@@ -1,8 +1,19 @@
-@import './Reset';
+@mixin mzElementReset () {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+}
 
 @mixin mzActionItem () {
   cursor: pointer;
   &:focus {
     outline:0;
   }
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

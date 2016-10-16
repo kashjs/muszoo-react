@@ -4,7 +4,7 @@
   "description": "ui building blocks for reactjs based applications",
   "main": "./src/index.js",
   "scripts": {
-    "start": "webpack-dev-server -d & node-sass -w docs/index.scss docs/dist/index.css",
+    "start": "webpack-dev-server -d & node-sass --watch=.scss docs/index.scss docs/dist/index.css",
     "build": "npm run build:scss & npm run build:js",
     "build:scss": "node-sass docs/index.scss docs/dist/index.css",
     "build:js": "webpack -d",

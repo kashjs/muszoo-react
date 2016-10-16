@@ -1,0 +1,3 @@
+@mixin mzShadow ($spread: 8px) {
+  box-shadow: 0 0 $spread 0 $mzCShadow;
+}

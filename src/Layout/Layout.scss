@@ -1,0 +1,19 @@
+.mz-flex {
+  display: flex;
+
+  &.mz-flex-align-stretch {
+    align-items: stretch;
+  }
+
+  .mz-flex-fluid {
+    flex-grow: 2;
+  }
+
+  .mz-flex-group-left {
+    order: -1;
+  }
+
+  .mz-flex-group-right {
+    order: 1;
+  }
+}

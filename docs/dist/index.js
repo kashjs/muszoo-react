@@ -21965,6 +21965,8 @@
 	
 	var _Examples = __webpack_require__(/*! ./Examples */ 173);
 	
+	var _Navbar = __webpack_require__(/*! muszoo-react/Navbar */ 176);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -21988,7 +21990,47 @@
 	            return _react2.default.createElement(
 	                'div',
 	                null,
-	                _react2.default.createElement(_Examples.Examples, null)
+	                _react2.default.createElement(
+	                    _Navbar.MZNavbar,
+	                    { className: 'mz-fixed-top mz-flex mz-flex-align-stretch' },
+	                    _react2.default.createElement(
+	                        _Navbar.MZNavbarGroup,
+	                        { className: 'mz-flex-group-left' },
+	                        _react2.default.createElement(
+	                            _Navbar.MZNavbarBrand,
+	                            null,
+	                            'MusZoo React'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        _Navbar.MZNavbarGroup,
+	                        { className: 'mz-flex-fluid' },
+	                        _react2.default.createElement(
+	                            _Navbar.MZNavbarItem,
+	                            null,
+	                            'Docs'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        _Navbar.MZNavbarGroup,
+	                        { className: 'mz-flex-group-right' },
+	                        _react2.default.createElement(
+	                            _Navbar.MZNavbarItem,
+	                            null,
+	                            'Login'
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(_Examples.Examples, null),
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    _react2.default.createElement(
+	                        'em',
+	                        null,
+	                        'NOTE: This project is under development.'
+	                    )
+	                )
 	            );
 	        }
 	    }]);
@@ -22018,6 +22060,8 @@
 	
 	var _Button = __webpack_require__(/*! muszoo-react/Button */ 174);
 	
+	var _Navbar = __webpack_require__(/*! muszoo-react/Navbar */ 176);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22042,9 +22086,14 @@
 	                'div',
 	                null,
 	                _react2.default.createElement(
-	                    'h1',
+	                    'h2',
 	                    null,
 	                    'Buttons'
+	                ),
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'regular'
 	                ),
 	                _react2.default.createElement(
 	                    _Button.MZButton,
@@ -22053,23 +22102,104 @@
 	                ),
 	                _react2.default.createElement(
 	                    _Button.MZButton,
-	                    { btnType: 'prime' },
+	                    { className: 'mz-prime' },
 	                    'Prime'
 	                ),
 	                _react2.default.createElement(
 	                    _Button.MZButton,
-	                    { btnType: 'success' },
+	                    { className: 'mz-success' },
 	                    'Success'
 	                ),
 	                _react2.default.createElement(
 	                    _Button.MZButton,
-	                    { btnType: 'warning' },
+	                    { className: 'mz-info' },
+	                    'Info'
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { className: 'mz-warning' },
 	                    'Warning'
 	                ),
 	                _react2.default.createElement(
 	                    _Button.MZButton,
-	                    { btnType: 'danger' },
+	                    { className: 'mz-danger' },
 	                    'Danger'
+	                ),
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'transparent'
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { className: 'mz-transparent' },
+	                    'Default'
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { className: 'mz-prime mz-transparent' },
+	                    'Prime'
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { className: 'mz-success mz-transparent' },
+	                    'Success'
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { className: 'mz-info mz-transparent' },
+	                    'Info'
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { className: 'mz-warning mz-transparent' },
+	                    'Warning'
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { className: 'mz-danger mz-transparent' },
+	                    'Danger'
+	                ),
+	                _react2.default.createElement(
+	                    'h2',
+	                    null,
+	                    'Navbar'
+	                ),
+	                _react2.default.createElement(
+	                    _Navbar.MZNavbar,
+	                    { className: 'mz-flex mz-flex-align-stretch' },
+	                    _react2.default.createElement(
+	                        _Navbar.MZNavbarGroup,
+	                        { className: 'mz-flex-group-left' },
+	                        _react2.default.createElement(
+	                            _Navbar.MZNavbarBrand,
+	                            null,
+	                            'MusZoo React'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        _Navbar.MZNavbarGroup,
+	                        { className: 'mz-flex-fluid' },
+	                        _react2.default.createElement(
+	                            _Navbar.MZNavbarItem,
+	                            null,
+	                            'Source'
+	                        ),
+	                        _react2.default.createElement(
+	                            _Navbar.MZNavbarItem,
+	                            null,
+	                            'Docs'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        _Navbar.MZNavbarGroup,
+	                        { className: 'mz-flex-group-right' },
+	                        _react2.default.createElement(
+	                            _Navbar.MZNavbarItem,
+	                            { href: 'http://yahoo.com' },
+	                            'Signup'
+	                        )
+	                    )
 	                )
 	            );
 	        }
@@ -22143,7 +22273,7 @@
 	    _createClass(MZButton, [{
 	        key: 'render',
 	        value: function render() {
-	            var className = 'mz-button ' + this.props.btnType;
+	            var className = 'mz-button ' + this.props.className;
 	            return _react2.default.createElement(
 	                'button',
 	                { className: className },
@@ -22156,7 +22286,193 @@
 	}(_react2.default.Component);
 	
 	MZButton.propTypes = {
-	    btnType: _react2.default.PropTypes.string.isRequired
+	    className: _react2.default.PropTypes.string
+	};
+	
+	MZButton.defaultProps = {
+	    className: ''
+	};
+
+/***/ },
+/* 176 */
+/*!*****************************!*\
+  !*** ./src/Navbar/index.js ***!
+  \*****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _Navbar = __webpack_require__(/*! ./Navbar */ 177);
+	
+	Object.keys(_Navbar).forEach(function (key) {
+	  if (key === "default" || key === "__esModule") return;
+	  Object.defineProperty(exports, key, {
+	    enumerable: true,
+	    get: function get() {
+	      return _Navbar[key];
+	    }
+	  });
+	});
+
+/***/ },
+/* 177 */
+/*!******************************!*\
+  !*** ./src/Navbar/Navbar.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.MZNavbarItem = exports.MZNavbarBrand = exports.MZNavbarGroup = exports.MZNavbar = undefined;
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var MZNavbar = exports.MZNavbar = function (_React$Component) {
+	    _inherits(MZNavbar, _React$Component);
+	
+	    function MZNavbar() {
+	        _classCallCheck(this, MZNavbar);
+	
+	        return _possibleConstructorReturn(this, (MZNavbar.__proto__ || Object.getPrototypeOf(MZNavbar)).apply(this, arguments));
+	    }
+	
+	    _createClass(MZNavbar, [{
+	        key: 'render',
+	        value: function render() {
+	            var className = 'mz-navbar ' + this.props.className;
+	            return _react2.default.createElement(
+	                'nav',
+	                { className: className },
+	                this.props.children
+	            );
+	        }
+	    }]);
+	
+	    return MZNavbar;
+	}(_react2.default.Component);
+	
+	MZNavbar.propTypes = {
+	    className: _react2.default.PropTypes.string
+	};
+	
+	MZNavbar.defaultProps = {
+	    className: ''
+	};
+	
+	var MZNavbarGroup = exports.MZNavbarGroup = function (_React$Component2) {
+	    _inherits(MZNavbarGroup, _React$Component2);
+	
+	    function MZNavbarGroup() {
+	        _classCallCheck(this, MZNavbarGroup);
+	
+	        return _possibleConstructorReturn(this, (MZNavbarGroup.__proto__ || Object.getPrototypeOf(MZNavbarGroup)).apply(this, arguments));
+	    }
+	
+	    _createClass(MZNavbarGroup, [{
+	        key: 'render',
+	        value: function render() {
+	            var className = 'mz-navbar-group ' + this.props.className;
+	            return _react2.default.createElement(
+	                'div',
+	                { className: className },
+	                this.props.children
+	            );
+	        }
+	    }]);
+	
+	    return MZNavbarGroup;
+	}(_react2.default.Component);
+	
+	MZNavbarGroup.propTypes = {
+	    className: _react2.default.PropTypes.string
+	};
+	
+	MZNavbarGroup.defaultProps = {
+	    className: ''
+	};
+	
+	var MZNavbarBrand = exports.MZNavbarBrand = function (_React$Component3) {
+	    _inherits(MZNavbarBrand, _React$Component3);
+	
+	    function MZNavbarBrand() {
+	        _classCallCheck(this, MZNavbarBrand);
+	
+	        return _possibleConstructorReturn(this, (MZNavbarBrand.__proto__ || Object.getPrototypeOf(MZNavbarBrand)).apply(this, arguments));
+	    }
+	
+	    _createClass(MZNavbarBrand, [{
+	        key: 'render',
+	        value: function render() {
+	            var className = 'mz-navbar-brand ' + this.props.className;
+	            return _react2.default.createElement(
+	                'div',
+	                { className: className },
+	                this.props.children
+	            );
+	        }
+	    }]);
+	
+	    return MZNavbarBrand;
+	}(_react2.default.Component);
+	
+	MZNavbarBrand.propTypes = {
+	    className: _react2.default.PropTypes.string
+	};
+	
+	MZNavbarBrand.defaultProps = {
+	    className: ''
+	};
+	
+	var MZNavbarItem = exports.MZNavbarItem = function (_React$Component4) {
+	    _inherits(MZNavbarItem, _React$Component4);
+	
+	    function MZNavbarItem() {
+	        _classCallCheck(this, MZNavbarItem);
+	
+	        return _possibleConstructorReturn(this, (MZNavbarItem.__proto__ || Object.getPrototypeOf(MZNavbarItem)).apply(this, arguments));
+	    }
+	
+	    _createClass(MZNavbarItem, [{
+	        key: 'render',
+	        value: function render() {
+	            var className = 'mz-navbar-item ' + this.props.className;
+	            return _react2.default.createElement(
+	                'a',
+	                { className: className, href: this.props.href },
+	                this.props.children
+	            );
+	        }
+	    }]);
+	
+	    return MZNavbarItem;
+	}(_react2.default.Component);
+	
+	MZNavbarItem.propTypes = {
+	    className: _react2.default.PropTypes.string,
+	    href: _react2.default.PropTypes.string
+	};
+	
+	MZNavbarItem.defaultProps = {
+	    className: ''
 	};
 
 /***/ }
