@@ -1,1 +1,8 @@
 @import './Reset';
+
+@mixin mzActionItem () {
+  cursor: pointer;
+  &:focus {
+    outline:0;
+  }
+}

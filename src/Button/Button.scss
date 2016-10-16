@@ -1,31 +1,54 @@
-$btnHeight: 12px;
-
 @mixin generateButton($color, $padding, $textColor: $mzCText1) {
-  border: darken($color, 20%);
+  font-size: $mzButtonFontSize;
+  border: 1px solid darken($color, 10%);
   background: $color;
-  padding: $padding;
+  padding: $padding $padding * 2;
   margin-left: $padding;
   color: $textColor;
+
+
+  &.transparent {
+    background: transparent;
+    backgorund-color: none;
+    color: $mzCText0;
+
+    &:hover {
+      color: $textColor;
+    }
+
+    &:active {
+      color: $textColor;
+    }
+  }
+
+  &:hover {
+    background: lighten($color, 10%);
+  }
+
+  &:active {
+    background: lighten($color, 15%);
+  }
 }
 
 .mz-button {
   @include elementReset();
+  @include mzActionItem();
 
-  @include generateButton($mzCD0, $mzPL2, $mzCText0);
+  @include generateButton($mzCD0, $mzPL4, $mzCText0);
 
   &.prime {
-    @include generateButton($mzCD1, $mzPL2);
+    @include generateButton($mzCD1, $mzPL4);
   }
 
   &.success {
-    @include generateButton($mzCD2, $mzPL2);
+    @include generateButton($mzCD2, $mzPL4);
   }
 
   &.warning {
-    @include generateButton($mzCD3, $mzPL2);
+    @include generateButton($mzCD3, $mzPL4);
   }
 
   &.danger {
-    @include generateButton($mzCD4, $mzPL2);
+    @include generateButton($mzCD4, $mzPL4);
   }
 }

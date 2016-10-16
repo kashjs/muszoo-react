@@ -7,9 +7,27 @@ ol {
 }
 
 body {
-  padding: 30px 20px;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #efefef;
+  padding: 60px 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+@import '../src/index';
+
+.ripple {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(0);
+  position: absolute;
+  opacity: 1;
+}
+.rippleEffect {
+  animation: rippleDrop .6s linear;
 }
 
-@import '../src/index';
+@keyframes rippleDrop {
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}

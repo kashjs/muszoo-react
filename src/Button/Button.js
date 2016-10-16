@@ -2,15 +2,15 @@ import React from 'react';
 
 export class MZButton extends React.Component {
     render() {
-        let className = 'mz-button ' + this.props.btnType;
+        let className = 'mz-button ' + this.props.type;
         return <button className={className}>{this.props.children}</button>
     }
 }
 
 MZButton.propTypes = {
-    btnType: React.PropTypes.string
+    type: React.PropTypes.string
 };
 
 MZButton.defaultProps = {
-    btnType: ''
+    type: ''
 };
