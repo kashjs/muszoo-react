@@ -58,7 +58,9 @@
     animation: mzRipple 1s ease-out; }
   .mz-button:after {
     visibility: hidden; }
-  .mz-button:focus:after {
+  .mz-button:hover:after {
+    visibility: visible; }
+  .mz-button:active:after {
     visibility: visible; }
   .mz-button:hover {
     background: #edeeef; }
@@ -109,7 +111,9 @@
       animation: mzRipple 1s ease-out; }
     .mz-button.mz-prime:after {
       visibility: hidden; }
-    .mz-button.mz-prime:focus:after {
+    .mz-button.mz-prime:hover:after {
+      visibility: visible; }
+    .mz-button.mz-prime:active:after {
       visibility: visible; }
     .mz-button.mz-prime:hover {
       background: #5faee3; }
@@ -160,7 +164,9 @@
       animation: mzRipple 1s ease-out; }
     .mz-button.mz-success:after {
       visibility: hidden; }
-    .mz-button.mz-success:focus:after {
+    .mz-button.mz-success:hover:after {
+      visibility: visible; }
+    .mz-button.mz-success:active:after {
       visibility: visible; }
     .mz-button.mz-success:hover {
       background: #28e1bd; }
@@ -211,7 +217,9 @@
       animation: mzRipple 1s ease-out; }
     .mz-button.mz-info:after {
       visibility: hidden; }
-    .mz-button.mz-info:focus:after {
+    .mz-button.mz-info:hover:after {
+      visibility: visible; }
+    .mz-button.mz-info:active:after {
       visibility: visible; }
     .mz-button.mz-info:hover {
       background: #7cc5e2; }
@@ -262,7 +270,9 @@
       animation: mzRipple 1s ease-out; }
     .mz-button.mz-warning:after {
       visibility: hidden; }
-    .mz-button.mz-warning:focus:after {
+    .mz-button.mz-warning:hover:after {
+      visibility: visible; }
+    .mz-button.mz-warning:active:after {
       visibility: visible; }
     .mz-button.mz-warning:hover {
       background: #f4d03f; }
@@ -313,7 +323,9 @@
       animation: mzRipple 1s ease-out; }
     .mz-button.mz-danger:after {
       visibility: hidden; }
-    .mz-button.mz-danger:focus:after {
+    .mz-button.mz-danger:hover:after {
+      visibility: visible; }
+    .mz-button.mz-danger:active:after {
       visibility: visible; }
     .mz-button.mz-danger:hover {
       background: #ed7669; }
@@ -394,7 +406,9 @@
       animation: mzRipple 1s ease-out; }
     .mz-navbar .mz-navbar-group .mz-navbar-item:after {
       visibility: hidden; }
-    .mz-navbar .mz-navbar-group .mz-navbar-item:focus:after {
+    .mz-navbar .mz-navbar-group .mz-navbar-item:hover:after {
+      visibility: visible; }
+    .mz-navbar .mz-navbar-group .mz-navbar-item:active:after {
       visibility: visible; }
     .mz-navbar .mz-navbar-group .mz-navbar-item:hover {
       background: #1e3c59; }

@@ -39,7 +39,11 @@
     visibility: hidden;
   }
 
-  &:focus:after {
+  &:hover:after {
+    visibility: visible;
+  }
+
+  &:active:after {
     visibility: visible;
   }
 
