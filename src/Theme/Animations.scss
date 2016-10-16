@@ -1,0 +1,53 @@
+@mixin mzAnimationTap($color: $mzCB7) {
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 120px;
+    height: 120px;
+    margin-left: -60px;
+    margin-top: -60px;
+    background: darken($color, 5%);
+    border-radius: 100%;
+    opacity: .6;
+    transform: scale(0);
+  }
+
+  @keyframes mzRipple {
+    0% {
+      transform: scale(0);
+    }
+    20% {
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1);
+    }
+  }
+
+  &:not(:active):after {
+    animation: mzRipple 1s ease-out;
+  }
+
+  &:after {
+    visibility: hidden;
+  }
+
+  &:focus:after {
+    visibility: visible;
+  }
+
+  &:hover {
+    background: lighten($color, 10%);
+  }
+
+  &:active {
+    background: lighten($color, 10%);
+  }
+}

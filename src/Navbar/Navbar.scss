@@ -16,7 +16,7 @@
   }
 
   .mz-navbar-group {
-    &.shift-right {
+    &.mz-flex-group-right {
       .mz-navbar-item:last-child {
         border-right: none;
       }
@@ -30,19 +30,16 @@
     }
 
     .mz-navbar-item {
+      @include mzElementReset();
       @include mzActionItem();
+      color: $mzCText1;
       padding: 0 $mzPL4;
       display: inline-block;
-      color: $mzCText1;
-      text-decoration: none;
       border-left: 1px solid darken($mzCNav, 20%);
+
+      @include mzAnimationTap($mzCNav);
     }
-    .mz-navbar-item:hover{
-      background-color: lighten($mzCNav, 10%);
-    }
-    .mz-navbar-item:active {
-      background-color: lighten($mzCNav, 15%);
-    }
+
     .mz-navbar-item:last-child {
       border-right: 1px solid darken($mzCNav, 20%);
     }

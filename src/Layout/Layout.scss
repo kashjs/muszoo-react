@@ -1,5 +1,6 @@
 .mz-flex {
   display: flex;
+  justify-content: space-between;
 
   &.mz-flex-align-stretch {
     align-items: stretch;

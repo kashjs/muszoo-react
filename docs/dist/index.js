@@ -22004,20 +22004,11 @@
 	                    ),
 	                    _react2.default.createElement(
 	                        _Navbar.MZNavbarGroup,
-	                        { className: 'mz-flex-fluid' },
-	                        _react2.default.createElement(
-	                            _Navbar.MZNavbarItem,
-	                            null,
-	                            'Docs'
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        _Navbar.MZNavbarGroup,
 	                        { className: 'mz-flex-group-right' },
 	                        _react2.default.createElement(
 	                            _Navbar.MZNavbarItem,
-	                            null,
-	                            'Login'
+	                            { href: 'https://github.com/kashjs/muszoo-react' },
+	                            'Source'
 	                        )
 	                    )
 	                ),
@@ -22182,12 +22173,12 @@
 	                        { className: 'mz-flex-fluid' },
 	                        _react2.default.createElement(
 	                            _Navbar.MZNavbarItem,
-	                            null,
+	                            { href: '#' },
 	                            'Source'
 	                        ),
 	                        _react2.default.createElement(
 	                            _Navbar.MZNavbarItem,
-	                            null,
+	                            { href: '#' },
 	                            'Docs'
 	                        )
 	                    ),
@@ -22196,7 +22187,7 @@
 	                        { className: 'mz-flex-group-right' },
 	                        _react2.default.createElement(
 	                            _Navbar.MZNavbarItem,
-	                            { href: 'http://yahoo.com' },
+	                            { href: '#' },
 	                            'Signup'
 	                        )
 	                    )

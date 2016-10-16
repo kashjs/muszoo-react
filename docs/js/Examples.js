@@ -29,11 +29,11 @@ export class Examples extends React.Component {
                     <MZNavbarBrand>MusZoo React</MZNavbarBrand>
                 </MZNavbarGroup>
                 <MZNavbarGroup className="mz-flex-fluid">
-                    <MZNavbarItem>Source</MZNavbarItem>
-                    <MZNavbarItem>Docs</MZNavbarItem>
+                    <MZNavbarItem href="#">Source</MZNavbarItem>
+                    <MZNavbarItem href="#">Docs</MZNavbarItem>
                 </MZNavbarGroup>
                 <MZNavbarGroup className="mz-flex-group-right">
-                    <MZNavbarItem href="http://yahoo.com">
+                    <MZNavbarItem href="#">
                         Signup
                     </MZNavbarItem>
                 </MZNavbarGroup>
