@@ -8,7 +8,6 @@ module.exports = {
         contentBase: "./docs/",
         inline: true,
         port: 4000
-        // host: '10.0.0.91'
     },
     output: {
         path: __dirname + "/docs/dist",

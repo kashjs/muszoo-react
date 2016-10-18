@@ -50,7 +50,7 @@ MZNavbarBrand.defaultProps = {
 export class MZNavbarItem extends React.Component {
     render() {
         let className = 'mz-navbar-item ' + this.props.className;
-        return <a className={className} href={this.props.href}>{this.props.children}</a>
+        return <a type="button" className={className} href={this.props.href}>{this.props.children}</a>
     }
 }
 
