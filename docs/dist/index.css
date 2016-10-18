@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: none;
   -webkit-touch-callout: none;
   text-decoration: none;
   -webkit-user-select: none;
@@ -14,8 +14,9 @@
   -ms-user-select: none;
   user-select: none;
   box-sizing: border-box;
-  box-shadow: 0 0 5px 0 #b3b3b3;
+  box-shadow: 0 0 5px 0 #D1D5D8;
   font-size: 13.2px;
+  font-weight: 500;
   border: 1px solid #b5bcc1;
   background: #D1D5D8;
   height: 40px;
@@ -63,8 +64,9 @@
     background: #edeeef; }
   .mz-button.mz-prime {
     box-sizing: border-box;
-    box-shadow: 0 0 5px 0 #b3b3b3;
+    box-shadow: 0 0 5px 0 #3498DB;
     font-size: 13.2px;
+    font-weight: 500;
     border: 1px solid #217dbb;
     background: #3498DB;
     height: 40px;
@@ -110,8 +112,9 @@
       background: #5faee3; }
   .mz-button.mz-success {
     box-sizing: border-box;
-    box-shadow: 0 0 5px 0 #b3b3b3;
+    box-shadow: 0 0 5px 0 #1ABC9C;
     font-size: 13.2px;
+    font-weight: 500;
     border: 1px solid #148f77;
     background: #1ABC9C;
     height: 40px;
@@ -157,8 +160,9 @@
       background: #28e1bd; }
   .mz-button.mz-info {
     box-sizing: border-box;
-    box-shadow: 0 0 5px 0 #b3b3b3;
+    box-shadow: 0 0 5px 0 #52B3D9;
     font-size: 13.2px;
+    font-weight: 500;
     border: 1px solid #2d9fcb;
     background: #52B3D9;
     height: 40px;
@@ -204,8 +208,9 @@
       background: #7cc5e2; }
   .mz-button.mz-warning {
     box-sizing: border-box;
-    box-shadow: 0 0 5px 0 #b3b3b3;
+    box-shadow: 0 0 5px 0 #F1C40F;
     font-size: 13.2px;
+    font-weight: 500;
     border: 1px solid #c29d0b;
     background: #F1C40F;
     height: 40px;
@@ -251,8 +256,9 @@
       background: #f4d03f; }
   .mz-button.mz-danger {
     box-sizing: border-box;
-    box-shadow: 0 0 5px 0 #b3b3b3;
+    box-shadow: 0 0 5px 0 #E74C3C;
     font-size: 13.2px;
+    font-weight: 500;
     border: 1px solid #d62c1a;
     background: #E74C3C;
     height: 40px;
@@ -330,7 +336,7 @@
     margin: 0;
     padding: 0;
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: none;
     -webkit-touch-callout: none;
     text-decoration: none;
     -webkit-user-select: none;

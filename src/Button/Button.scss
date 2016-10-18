@@ -2,14 +2,14 @@ $mzButtonHeight: 40px;
 
 @mixin mzGenerateButton($color, $padding, $textColor: $mzCText1) {
   box-sizing: border-box;
-  @include mzShadow(5px);
+  @include mzShadow(5px, $color);
 
   font-size: $mzButtonFontSize;
+  font-weight: $mzButtonFontWeight;
   border: 1px solid darken($color, 10%);
   background: $color;
   height: $mzButtonHeight;
   line-height: $mzButtonHeight;
-  //width: 100px;
   padding: 0 $mzPL4;
   margin-left: $padding;
   color: $textColor;

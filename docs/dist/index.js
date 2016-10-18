@@ -21997,6 +21997,15 @@
 	                        _Navbar.MZNavbarGroup,
 	                        { className: 'mz-flex-group-left' },
 	                        _react2.default.createElement(
+	                            _Navbar.MZNavbarItem,
+	                            null,
+	                            _react2.default.createElement('i', { className: 'fa fa-bars', ariaHidden: 'true' })
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        _Navbar.MZNavbarGroup,
+	                        { className: 'mz-flex-group-left' },
+	                        _react2.default.createElement(
 	                            _Navbar.MZNavbarBrand,
 	                            null,
 	                            'MusZoo React'
