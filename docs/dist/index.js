@@ -22448,7 +22448,7 @@
 	            var className = 'mz-navbar-item ' + this.props.className;
 	            return _react2.default.createElement(
 	                'a',
-	                { className: className, href: this.props.href },
+	                { type: 'button', className: className, href: this.props.href },
 	                this.props.children
 	            );
 	        }

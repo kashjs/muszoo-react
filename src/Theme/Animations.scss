@@ -1,7 +1,8 @@
 @mixin mzAnimationTap($color: $mzCB7) {
   position: relative;
   overflow: hidden;
-  &:after {
+
+  &:before, &:after {
     content: "";
     box-sizing: border-box;
     background: darken($color, 5%);
@@ -15,7 +16,10 @@
     opacity: 0;
     transition: all 1s ease;
   }
-  &:active:after {
+  &:after {
+    background: transparent;
+  }
+  &:active:before {
     opacity: 1;
     top: 50%;
     bottom: 50%;

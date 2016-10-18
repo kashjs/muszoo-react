@@ -35,7 +35,7 @@
       color: #333333; }
     .mz-button.mz-transparent:active {
       color: #333333; }
-  .mz-button:after {
+  .mz-button:before, .mz-button:after {
     content: "";
     box-sizing: border-box;
     background: #c3c8cc;
@@ -48,7 +48,9 @@
     right: -50%;
     opacity: 0;
     transition: all 1s ease; }
-  .mz-button:active:after {
+  .mz-button:after {
+    background: transparent; }
+  .mz-button:active:before {
     opacity: 1;
     top: 50%;
     bottom: 50%;
@@ -80,7 +82,7 @@
         color: white; }
       .mz-button.mz-prime.mz-transparent:active {
         color: white; }
-    .mz-button.mz-prime:after {
+    .mz-button.mz-prime:before, .mz-button.mz-prime:after {
       content: "";
       box-sizing: border-box;
       background: #258cd1;
@@ -93,7 +95,9 @@
       right: -50%;
       opacity: 0;
       transition: all 1s ease; }
-    .mz-button.mz-prime:active:after {
+    .mz-button.mz-prime:after {
+      background: transparent; }
+    .mz-button.mz-prime:active:before {
       opacity: 1;
       top: 50%;
       bottom: 50%;
@@ -125,7 +129,7 @@
         color: white; }
       .mz-button.mz-success.mz-transparent:active {
         color: white; }
-    .mz-button.mz-success:after {
+    .mz-button.mz-success:before, .mz-button.mz-success:after {
       content: "";
       box-sizing: border-box;
       background: #17a689;
@@ -138,7 +142,9 @@
       right: -50%;
       opacity: 0;
       transition: all 1s ease; }
-    .mz-button.mz-success:active:after {
+    .mz-button.mz-success:after {
+      background: transparent; }
+    .mz-button.mz-success:active:before {
       opacity: 1;
       top: 50%;
       bottom: 50%;
@@ -170,7 +176,7 @@
         color: white; }
       .mz-button.mz-info.mz-transparent:active {
         color: white; }
-    .mz-button.mz-info:after {
+    .mz-button.mz-info:before, .mz-button.mz-info:after {
       content: "";
       box-sizing: border-box;
       background: #3daad4;
@@ -183,7 +189,9 @@
       right: -50%;
       opacity: 0;
       transition: all 1s ease; }
-    .mz-button.mz-info:active:after {
+    .mz-button.mz-info:after {
+      background: transparent; }
+    .mz-button.mz-info:active:before {
       opacity: 1;
       top: 50%;
       bottom: 50%;
@@ -215,7 +223,7 @@
         color: white; }
       .mz-button.mz-warning.mz-transparent:active {
         color: white; }
-    .mz-button.mz-warning:after {
+    .mz-button.mz-warning:before, .mz-button.mz-warning:after {
       content: "";
       box-sizing: border-box;
       background: #dab10d;
@@ -228,7 +236,9 @@
       right: -50%;
       opacity: 0;
       transition: all 1s ease; }
-    .mz-button.mz-warning:active:after {
+    .mz-button.mz-warning:after {
+      background: transparent; }
+    .mz-button.mz-warning:active:before {
       opacity: 1;
       top: 50%;
       bottom: 50%;
@@ -260,7 +270,7 @@
         color: white; }
       .mz-button.mz-danger.mz-transparent:active {
         color: white; }
-    .mz-button.mz-danger:after {
+    .mz-button.mz-danger:before, .mz-button.mz-danger:after {
       content: "";
       box-sizing: border-box;
       background: #e43725;
@@ -273,7 +283,9 @@
       right: -50%;
       opacity: 0;
       transition: all 1s ease; }
-    .mz-button.mz-danger:active:after {
+    .mz-button.mz-danger:after {
+      background: transparent; }
+    .mz-button.mz-danger:active:before {
       opacity: 1;
       top: 50%;
       bottom: 50%;
@@ -333,7 +345,7 @@
     overflow: hidden; }
     .mz-navbar .mz-navbar-group .mz-navbar-item:focus {
       outline: 0; }
-    .mz-navbar .mz-navbar-group .mz-navbar-item:after {
+    .mz-navbar .mz-navbar-group .mz-navbar-item:before, .mz-navbar .mz-navbar-group .mz-navbar-item:after {
       content: "";
       box-sizing: border-box;
       background: #0b1520;
@@ -346,7 +358,9 @@
       right: -50%;
       opacity: 0;
       transition: all 1s ease; }
-    .mz-navbar .mz-navbar-group .mz-navbar-item:active:after {
+    .mz-navbar .mz-navbar-group .mz-navbar-item:after {
+      background: transparent; }
+    .mz-navbar .mz-navbar-group .mz-navbar-item:active:before {
       opacity: 1;
       top: 50%;
       bottom: 50%;
