@@ -14,7 +14,6 @@
   -ms-user-select: none;
   user-select: none;
   box-sizing: border-box;
-  box-shadow: 0 0 5px 0 #D1D5D8;
   font-size: 13.2px;
   font-weight: 500;
   border: 1px solid #b5bcc1;
@@ -22,6 +21,7 @@
   height: 40px;
   line-height: 40px;
   padding: 0 12px;
+  border-radius: 4px;
   margin-left: 12px;
   color: #333333;
   position: relative;
@@ -31,7 +31,7 @@
   .mz-button.mz-transparent {
     background: transparent;
     backgorund-color: none;
-    color: #333333; }
+    color: #D1D5D8; }
     .mz-button.mz-transparent:hover {
       color: #333333; }
     .mz-button.mz-transparent:active {
@@ -64,7 +64,6 @@
     background: #edeeef; }
   .mz-button.mz-prime {
     box-sizing: border-box;
-    box-shadow: 0 0 5px 0 #3498DB;
     font-size: 13.2px;
     font-weight: 500;
     border: 1px solid #217dbb;
@@ -72,6 +71,7 @@
     height: 40px;
     line-height: 40px;
     padding: 0 12px;
+    border-radius: 4px;
     margin-left: 12px;
     color: white;
     position: relative;
@@ -79,7 +79,7 @@
     .mz-button.mz-prime.mz-transparent {
       background: transparent;
       backgorund-color: none;
-      color: #333333; }
+      color: #3498DB; }
       .mz-button.mz-prime.mz-transparent:hover {
         color: white; }
       .mz-button.mz-prime.mz-transparent:active {
@@ -112,7 +112,6 @@
       background: #5faee3; }
   .mz-button.mz-success {
     box-sizing: border-box;
-    box-shadow: 0 0 5px 0 #1ABC9C;
     font-size: 13.2px;
     font-weight: 500;
     border: 1px solid #148f77;
@@ -120,6 +119,7 @@
     height: 40px;
     line-height: 40px;
     padding: 0 12px;
+    border-radius: 4px;
     margin-left: 12px;
     color: white;
     position: relative;
@@ -127,7 +127,7 @@
     .mz-button.mz-success.mz-transparent {
       background: transparent;
       backgorund-color: none;
-      color: #333333; }
+      color: #1ABC9C; }
       .mz-button.mz-success.mz-transparent:hover {
         color: white; }
       .mz-button.mz-success.mz-transparent:active {
@@ -160,7 +160,6 @@
       background: #28e1bd; }
   .mz-button.mz-info {
     box-sizing: border-box;
-    box-shadow: 0 0 5px 0 #52B3D9;
     font-size: 13.2px;
     font-weight: 500;
     border: 1px solid #2d9fcb;
@@ -168,6 +167,7 @@
     height: 40px;
     line-height: 40px;
     padding: 0 12px;
+    border-radius: 4px;
     margin-left: 12px;
     color: white;
     position: relative;
@@ -175,7 +175,7 @@
     .mz-button.mz-info.mz-transparent {
       background: transparent;
       backgorund-color: none;
-      color: #333333; }
+      color: #52B3D9; }
       .mz-button.mz-info.mz-transparent:hover {
         color: white; }
       .mz-button.mz-info.mz-transparent:active {
@@ -208,7 +208,6 @@
       background: #7cc5e2; }
   .mz-button.mz-warning {
     box-sizing: border-box;
-    box-shadow: 0 0 5px 0 #F1C40F;
     font-size: 13.2px;
     font-weight: 500;
     border: 1px solid #c29d0b;
@@ -216,6 +215,7 @@
     height: 40px;
     line-height: 40px;
     padding: 0 12px;
+    border-radius: 4px;
     margin-left: 12px;
     color: white;
     position: relative;
@@ -223,7 +223,7 @@
     .mz-button.mz-warning.mz-transparent {
       background: transparent;
       backgorund-color: none;
-      color: #333333; }
+      color: #F1C40F; }
       .mz-button.mz-warning.mz-transparent:hover {
         color: white; }
       .mz-button.mz-warning.mz-transparent:active {
@@ -256,7 +256,6 @@
       background: #f4d03f; }
   .mz-button.mz-danger {
     box-sizing: border-box;
-    box-shadow: 0 0 5px 0 #E74C3C;
     font-size: 13.2px;
     font-weight: 500;
     border: 1px solid #d62c1a;
@@ -264,6 +263,7 @@
     height: 40px;
     line-height: 40px;
     padding: 0 12px;
+    border-radius: 4px;
     margin-left: 12px;
     color: white;
     position: relative;
@@ -271,7 +271,7 @@
     .mz-button.mz-danger.mz-transparent {
       background: transparent;
       backgorund-color: none;
-      color: #333333; }
+      color: #E74C3C; }
       .mz-button.mz-danger.mz-transparent:hover {
         color: white; }
       .mz-button.mz-danger.mz-transparent:active {
@@ -310,12 +310,13 @@
   border-radius: 0;
   margin: 0;
   padding: 0;
-  box-shadow: 0 0 5px 0 #b3b3b3;
   background-color: #112233;
   color: white;
   height: 60px;
   line-height: 60px;
-  font-size: 15.6px; }
+  font-size: 15.6px;
+  border: 1px solid black;
+  z-index: 1; }
   .mz-navbar.mz-fixed-top {
     position: fixed;
     top: 0;
@@ -323,12 +324,16 @@
     right: 0; }
   .mz-navbar .mz-navbar-group.mz-flex-group-right .mz-navbar-item:last-child {
     border-right: none; }
-  .mz-navbar .mz-navbar-group .mz-navbar-brand {
+  .mz-navbar .mz-navbar-group.mz-flex-group-left .mz-navbar-item:first-child {
+    border-left: none; }
+  .mz-navbar .mz-navbar-group .mz-navbar-item:last-child {
+    border-right: 1px solid black; }
+  .mz-navbar .mz-navbar-brand {
     padding: 0 8px;
     margin-right: 16px;
     display: inline-block;
     font-size: 18.72px; }
-  .mz-navbar .mz-navbar-group .mz-navbar-item {
+  .mz-navbar .mz-navbar-item {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;
@@ -349,9 +354,9 @@
     border-left: 1px solid black;
     position: relative;
     overflow: hidden; }
-    .mz-navbar .mz-navbar-group .mz-navbar-item:focus {
+    .mz-navbar .mz-navbar-item:focus {
       outline: 0; }
-    .mz-navbar .mz-navbar-group .mz-navbar-item:before, .mz-navbar .mz-navbar-group .mz-navbar-item:after {
+    .mz-navbar .mz-navbar-item:before, .mz-navbar .mz-navbar-item:after {
       content: "";
       box-sizing: border-box;
       background: #0b1520;
@@ -364,21 +369,60 @@
       right: -50%;
       opacity: 0;
       transition: all 1s ease; }
-    .mz-navbar .mz-navbar-group .mz-navbar-item:after {
+    .mz-navbar .mz-navbar-item:after {
       background: transparent; }
-    .mz-navbar .mz-navbar-group .mz-navbar-item:active:before {
+    .mz-navbar .mz-navbar-item:active:before {
       opacity: 1;
       top: 50%;
       bottom: 50%;
       left: 50%;
       right: 50%;
       transition: 0s; }
-    .mz-navbar .mz-navbar-group .mz-navbar-item:hover {
+    .mz-navbar .mz-navbar-item:hover {
       background: #1e3c59; }
-    .mz-navbar .mz-navbar-group .mz-navbar-item:active {
+    .mz-navbar .mz-navbar-item:active {
       background: #1e3c59; }
-  .mz-navbar .mz-navbar-group .mz-navbar-item:last-child {
-    border-right: 1px solid black; }
+  .mz-navbar.mz-light {
+    border: 1px solid #bcbcbc;
+    background-color: #efefef;
+    color: #333333; }
+    .mz-navbar.mz-light .mz-navbar-group.mz-flex-group-right .mz-navbar-item:last-child {
+      border-right: none; }
+    .mz-navbar.mz-light .mz-navbar-group.mz-flex-group-left .mz-navbar-item:first-child {
+      border-left: none; }
+    .mz-navbar.mz-light .mz-navbar-group .mz-navbar-item:last-child {
+      border-right: 1px solid #bcbcbc; }
+    .mz-navbar.mz-light .mz-navbar-item {
+      border-left: 1px solid #bcbcbc;
+      color: #333333;
+      position: relative;
+      overflow: hidden; }
+      .mz-navbar.mz-light .mz-navbar-item:before, .mz-navbar.mz-light .mz-navbar-item:after {
+        content: "";
+        box-sizing: border-box;
+        background: #e2e2e2;
+        display: block;
+        position: absolute;
+        border-radius: 50%;
+        top: -150%;
+        bottom: -150%;
+        left: -250%;
+        right: -50%;
+        opacity: 0;
+        transition: all 1s ease; }
+      .mz-navbar.mz-light .mz-navbar-item:after {
+        background: transparent; }
+      .mz-navbar.mz-light .mz-navbar-item:active:before {
+        opacity: 1;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        transition: 0s; }
+      .mz-navbar.mz-light .mz-navbar-item:hover {
+        background: white; }
+      .mz-navbar.mz-light .mz-navbar-item:active {
+        background: white; }
 
 .mz-flex {
   display: flex;
@@ -391,6 +435,27 @@
     order: -1; }
   .mz-flex .mz-flex-group-right {
     order: 1; }
+
+.mz-sidebar {
+  position: fixed;
+  z-index: 2;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  background-color: #112233;
+  color: white;
+  height: 100%;
+  width: 0;
+  transition: all 0.3s ease; }
+  .mz-sidebar.active {
+    width: 300px; }
+  .mz-sidebar.mz-fixed-left {
+    left: 0; }
+  .mz-sidebar.mz-fixed-right {
+    right: 0; }
+  .mz-sidebar.mz-light {
+    background-color: #efefef;
+    color: #333333; }
 
 html,
 body,

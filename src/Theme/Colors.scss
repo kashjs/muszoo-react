@@ -11,7 +11,10 @@ $mzCB8: #F1C40F;
 $mzCB9: #E74C3C;
 
 // Component Specifics
-$mzCText0: $mzCB3;
-$mzCText1: $mzCB0;
-$mzCNav: $mzCB4;
-$mzCShadow: lighten($mzCB3, 50%);
+$mzCTextDark: $mzCB3;
+$mzCTextLight: $mzCB0;
+$mzCNavDark: $mzCB4;
+$mzCNavLight: $mzCB1;
+$mzCSidebarDark: $mzCB4;
+$mzCSidebarLight: $mzCB1;
+$mzCShadow: $mzCB3;

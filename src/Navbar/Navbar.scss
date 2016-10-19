@@ -1,12 +1,13 @@
 .mz-navbar {
   @include mzElementReset();
-  @include mzShadow(5px);
   $mzNavHeight: 60px;
-  background-color: $mzCNav;
-  color: $mzCText1;
+  background-color: $mzCNavDark;
+  color: $mzCTextLight;
   height: $mzNavHeight;
   line-height: $mzNavHeight;
   font-size: $mzNavbarFontSize;
+  border: 1px solid darken($mzCNavDark, 20%);
+  z-index: 1;
 
   &.mz-fixed-top {
     position: fixed;
@@ -21,27 +22,56 @@
         border-right: none;
       }
     }
-
-    .mz-navbar-brand {
-      padding: 0 $mzPL3;
-      margin-right: $mzML4;
-      display: inline-block;
-      font-size: $mzNavbarFontSize * 1.2;
+    &.mz-flex-group-left {
+      .mz-navbar-item:first-child {
+        border-left: none;
+      }
     }
-
-    .mz-navbar-item {
-      @include mzElementReset();
-      @include mzActionItem();
-      color: $mzCText1;
-      padding: 0 $mzPL4;
-      display: inline-block;
-      border-left: 1px solid darken($mzCNav, 20%);
-
-      @include mzAnimationTap($mzCNav);
-    }
-
     .mz-navbar-item:last-child {
-      border-right: 1px solid darken($mzCNav, 20%);
+      border-right: 1px solid darken($mzCNavDark, 20%);
+    }
+  }
+
+  .mz-navbar-brand {
+    padding: 0 $mzPL3;
+    margin-right: $mzML4;
+    display: inline-block;
+    font-size: $mzNavbarFontSize * 1.2;
+  }
+
+  .mz-navbar-item {
+    @include mzElementReset();
+    @include mzActionItem();
+    color: $mzCTextLight;
+    padding: 0 $mzPL4;
+    display: inline-block;
+    border-left: 1px solid darken($mzCNavDark, 20%);
+    @include mzAnimationTap($mzCNavDark);
+  }
+
+  &.mz-light {
+    border: 1px solid darken($mzCNavLight, 20%);
+    background-color: $mzCNavLight;
+    color: $mzCTextDark;
+    .mz-navbar-group {
+      &.mz-flex-group-right {
+        .mz-navbar-item:last-child {
+          border-right: none;
+        }
+      }
+      &.mz-flex-group-left {
+        .mz-navbar-item:first-child {
+          border-left: none;
+        }
+      }
+      .mz-navbar-item:last-child {
+        border-right: 1px solid darken($mzCNavLight, 20%);
+      }
+    }
+    .mz-navbar-item {
+      border-left: 1px solid darken($mzCNavLight, 20%);
+      color: $mzCTextDark;
+      @include mzAnimationTap($mzCNavLight);
     }
   }
 }

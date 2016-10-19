@@ -1,3 +1,7 @@
+@mixin mzAnimationSlide($period: 1s) {
+  transition: all $period ease;
+}
+
 @mixin mzAnimationTap($color: $mzCB7) {
   position: relative;
   overflow: hidden;
@@ -14,7 +18,7 @@
     left: -250%;
     right: -50%;
     opacity: 0;
-    transition: all 1s ease;
+    @include mzAnimationSlide();
   }
   &:after {
     background: transparent;

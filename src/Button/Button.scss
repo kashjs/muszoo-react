@@ -1,8 +1,8 @@
 $mzButtonHeight: 40px;
 
-@mixin mzGenerateButton($color, $padding, $textColor: $mzCText1) {
+@mixin mzGenerateButton($color, $padding, $textColor: $mzCTextLight) {
   box-sizing: border-box;
-  @include mzShadow(5px, $color);
+  //@include mzShadow(2px);
 
   font-size: $mzButtonFontSize;
   font-weight: $mzButtonFontWeight;
@@ -11,6 +11,7 @@ $mzButtonHeight: 40px;
   height: $mzButtonHeight;
   line-height: $mzButtonHeight;
   padding: 0 $mzPL4;
+  border-radius: $mzBtnRadius;
   margin-left: $padding;
   color: $textColor;
 
@@ -18,7 +19,7 @@ $mzButtonHeight: 40px;
   &.mz-transparent {
     background: transparent;
     backgorund-color: none;
-    color: $mzCText0;
+    color: $color;
 
     &:hover {
       color: $textColor;
@@ -36,7 +37,7 @@ $mzButtonHeight: 40px;
   @include mzElementReset();
   @include mzActionItem();
 
-  @include mzGenerateButton($mzCB2, $mzPL4, $mzCText0);
+  @include mzGenerateButton($mzCB2, $mzPL4, $mzCTextDark);
 
   &.mz-prime {
     @include mzGenerateButton($mzCB5, $mzPL4);
