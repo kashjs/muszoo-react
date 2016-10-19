@@ -21967,6 +21967,8 @@
 	
 	var _Navbar = __webpack_require__(/*! muszoo-react/Navbar */ 176);
 	
+	var _Sidebar = __webpack_require__(/*! muszoo-react/Sidebar */ 178);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -21978,57 +21980,100 @@
 	var App = exports.App = function (_React$Component) {
 	    _inherits(App, _React$Component);
 	
-	    function App() {
+	    function App(props) {
 	        _classCallCheck(this, App);
 	
-	        return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+	        var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+	
+	        _this.state = {
+	            showSidebar: false
+	        };
+	        return _this;
 	    }
 	
 	    _createClass(App, [{
+	        key: 'handleClick',
+	        value: function handleClick() {
+	            this.setState({ showSidebar: !this.state.showSidebar });
+	        }
+	    }, {
 	        key: 'render',
 	        value: function render() {
+	            var self = this;
 	            return _react2.default.createElement(
 	                'div',
 	                null,
 	                _react2.default.createElement(
-	                    _Navbar.MZNavbar,
-	                    { className: 'mz-fixed-top mz-flex mz-flex-align-stretch' },
+	                    'div',
+	                    { className: 'sideBar' },
 	                    _react2.default.createElement(
-	                        _Navbar.MZNavbarGroup,
-	                        { className: 'mz-flex-group-left' },
+	                        _Sidebar.MZSidebar,
+	                        { className: 'mz-fixed-left',
+	                            active: this.state.showSidebar },
 	                        _react2.default.createElement(
-	                            _Navbar.MZNavbarItem,
-	                            null,
-	                            _react2.default.createElement('i', { className: 'fa fa-bars', ariaHidden: 'true' })
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        _Navbar.MZNavbarGroup,
-	                        { className: 'mz-flex-group-left' },
-	                        _react2.default.createElement(
-	                            _Navbar.MZNavbarBrand,
-	                            null,
-	                            'MusZoo React'
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        _Navbar.MZNavbarGroup,
-	                        { className: 'mz-flex-group-right' },
-	                        _react2.default.createElement(
-	                            _Navbar.MZNavbarItem,
-	                            { href: 'https://github.com/kashjs/muszoo-react' },
-	                            'Source'
+	                            _Navbar.MZNavbar,
+	                            { className: 'mz-flex mz-flex-align-stretch' },
+	                            _react2.default.createElement(_Navbar.MZNavbarGroup, { className: 'mz-flex-group-left' }),
+	                            _react2.default.createElement(
+	                                _Navbar.MZNavbarGroup,
+	                                null,
+	                                'Sidebar Title'
+	                            ),
+	                            _react2.default.createElement(
+	                                _Navbar.MZNavbarGroup,
+	                                { className: 'mz-flex-group-right' },
+	                                _react2.default.createElement(
+	                                    _Navbar.MZNavbarItem,
+	                                    { onClick: this.handleClick.bind(self) },
+	                                    _react2.default.createElement('i', { className: 'fa fa-angle-left' })
+	                                )
+	                            )
 	                        )
 	                    )
 	                ),
-	                _react2.default.createElement(_Examples.Examples, null),
 	                _react2.default.createElement(
-	                    'p',
+	                    'div',
 	                    null,
 	                    _react2.default.createElement(
-	                        'em',
+	                        _Navbar.MZNavbar,
+	                        { className: 'mz-flex mz-fixed-top mz-flex-align-stretch' },
+	                        _react2.default.createElement(
+	                            _Navbar.MZNavbarGroup,
+	                            { className: 'mz-flex-group-left' },
+	                            _react2.default.createElement(
+	                                _Navbar.MZNavbarItem,
+	                                { onClick: this.handleClick.bind(this) },
+	                                _react2.default.createElement('i', { className: 'fa fa-bars' })
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            _Navbar.MZNavbarGroup,
+	                            { className: 'mz-flex-group-left' },
+	                            _react2.default.createElement(
+	                                _Navbar.MZNavbarBrand,
+	                                null,
+	                                'MusZoo React'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            _Navbar.MZNavbarGroup,
+	                            { className: 'mz-flex-group-right' },
+	                            _react2.default.createElement(
+	                                _Navbar.MZNavbarItem,
+	                                { href: 'https://github.com/kashjs/muszoo-react' },
+	                                'Source'
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(_Examples.Examples, null),
+	                    _react2.default.createElement(
+	                        'p',
 	                        null,
-	                        'NOTE: This project is under development.'
+	                        _react2.default.createElement(
+	                            'em',
+	                            null,
+	                            'NOTE: This project is under development.'
+	                        )
 	                    )
 	                )
 	            );
@@ -22062,6 +22107,8 @@
 	
 	var _Navbar = __webpack_require__(/*! muszoo-react/Navbar */ 176);
 	
+	var _Sidebar = __webpack_require__(/*! muszoo-react/Sidebar */ 178);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22073,15 +22120,32 @@
 	var Examples = exports.Examples = function (_React$Component) {
 	    _inherits(Examples, _React$Component);
 	
-	    function Examples() {
+	    function Examples(props) {
 	        _classCallCheck(this, Examples);
 	
-	        return _possibleConstructorReturn(this, (Examples.__proto__ || Object.getPrototypeOf(Examples)).apply(this, arguments));
+	        var _this = _possibleConstructorReturn(this, (Examples.__proto__ || Object.getPrototypeOf(Examples)).call(this, props));
+	
+	        _this.state = {
+	            showSidebarDark: false,
+	            showSidebarLight: false
+	        };
+	        return _this;
 	    }
 	
 	    _createClass(Examples, [{
+	        key: 'handleSidebarToggleDark',
+	        value: function handleSidebarToggleDark() {
+	            this.setState({ showSidebarDark: !this.state.showSidebarDark });
+	        }
+	    }, {
+	        key: 'handleSidebarToggleLight',
+	        value: function handleSidebarToggleLight() {
+	            this.setState({ showSidebarLight: !this.state.showSidebarLight });
+	        }
+	    }, {
 	        key: 'render',
 	        value: function render() {
+	            var self = this;
 	            return _react2.default.createElement(
 	                'div',
 	                null,
@@ -22200,6 +22264,110 @@
 	                            'Signup'
 	                        )
 	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    '.mz-light'
+	                ),
+	                _react2.default.createElement(
+	                    _Navbar.MZNavbar,
+	                    { className: 'mz-light mz-flex mz-flex-align-stretch' },
+	                    _react2.default.createElement(
+	                        _Navbar.MZNavbarGroup,
+	                        { className: 'mz-flex-group-left' },
+	                        _react2.default.createElement(
+	                            _Navbar.MZNavbarBrand,
+	                            null,
+	                            'MusZoo React'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        _Navbar.MZNavbarGroup,
+	                        { className: 'mz-flex-fluid' },
+	                        _react2.default.createElement(
+	                            _Navbar.MZNavbarItem,
+	                            { href: '#' },
+	                            'Source'
+	                        ),
+	                        _react2.default.createElement(
+	                            _Navbar.MZNavbarItem,
+	                            { href: '#' },
+	                            'Docs'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        _Navbar.MZNavbarGroup,
+	                        { className: 'mz-flex-group-right' },
+	                        _react2.default.createElement(
+	                            _Navbar.MZNavbarItem,
+	                            { href: '#' },
+	                            'Signup'
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'h2',
+	                    null,
+	                    'Sidenav'
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { onClick: this.handleSidebarToggleDark.bind(self) },
+	                    'Regular Sidenav - Toggle'
+	                ),
+	                _react2.default.createElement(
+	                    _Sidebar.MZSidebar,
+	                    { className: 'mz-fixed-right',
+	                        active: this.state.showSidebarDark },
+	                    _react2.default.createElement(
+	                        _Navbar.MZNavbar,
+	                        { className: 'mz-flex mz-flex-align-stretch' },
+	                        _react2.default.createElement(
+	                            _Navbar.MZNavbarGroup,
+	                            { className: 'mz-flex-group-left' },
+	                            _react2.default.createElement(
+	                                _Navbar.MZNavbarItem,
+	                                { onClick: this.handleSidebarToggleDark.bind(self) },
+	                                _react2.default.createElement('i', { className: 'fa fa-angle-right' })
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            _Navbar.MZNavbarGroup,
+	                            null,
+	                            'Sidebar Title'
+	                        ),
+	                        _react2.default.createElement(_Navbar.MZNavbarGroup, { className: 'mz-flex-group-right' })
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { onClick: this.handleSidebarToggleLight.bind(self) },
+	                    'Light Sidenav - Toggle'
+	                ),
+	                _react2.default.createElement(
+	                    _Sidebar.MZSidebar,
+	                    { className: 'mz-fixed-right mz-light',
+	                        active: this.state.showSidebarLight },
+	                    _react2.default.createElement(
+	                        _Navbar.MZNavbar,
+	                        { className: 'mz-flex mz-light mz-flex-align-stretch' },
+	                        _react2.default.createElement(
+	                            _Navbar.MZNavbarGroup,
+	                            { className: 'mz-flex-group-left' },
+	                            _react2.default.createElement(
+	                                _Navbar.MZNavbarItem,
+	                                { onClick: this.handleSidebarToggleLight.bind(self) },
+	                                _react2.default.createElement('i', { className: 'fa fa-angle-right' })
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            _Navbar.MZNavbarGroup,
+	                            null,
+	                            'Sidebar Title'
+	                        ),
+	                        _react2.default.createElement(_Navbar.MZNavbarGroup, { className: 'mz-flex-group-right' })
+	                    )
 	                )
 	            );
 	        }
@@ -22276,7 +22444,7 @@
 	            var className = 'mz-button ' + this.props.className;
 	            return _react2.default.createElement(
 	                'button',
-	                { className: className },
+	                { onClick: this.props.onClick, className: className },
 	                this.props.children
 	            );
 	        }
@@ -22286,7 +22454,8 @@
 	}(_react2.default.Component);
 	
 	MZButton.propTypes = {
-	    className: _react2.default.PropTypes.string
+	    className: _react2.default.PropTypes.string,
+	    onClick: _react2.default.PropTypes.func
 	};
 	
 	MZButton.defaultProps = {
@@ -22457,7 +22626,7 @@
 	            var className = 'mz-navbar-item ' + this.props.className;
 	            return _react2.default.createElement(
 	                'a',
-	                { type: 'button', className: className, href: this.props.href },
+	                { type: 'button', onClick: this.props.onClick, className: className, href: this.props.href },
 	                this.props.children
 	            );
 	        }
@@ -22473,6 +22642,93 @@
 	
 	MZNavbarItem.defaultProps = {
 	    className: ''
+	};
+
+/***/ },
+/* 178 */
+/*!******************************!*\
+  !*** ./src/Sidebar/index.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _Sidebar = __webpack_require__(/*! ./Sidebar */ 179);
+	
+	Object.keys(_Sidebar).forEach(function (key) {
+	  if (key === "default" || key === "__esModule") return;
+	  Object.defineProperty(exports, key, {
+	    enumerable: true,
+	    get: function get() {
+	      return _Sidebar[key];
+	    }
+	  });
+	});
+
+/***/ },
+/* 179 */
+/*!********************************!*\
+  !*** ./src/Sidebar/Sidebar.js ***!
+  \********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.MZSidebar = undefined;
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var MZSidebar = exports.MZSidebar = function (_React$Component) {
+	    _inherits(MZSidebar, _React$Component);
+	
+	    function MZSidebar() {
+	        _classCallCheck(this, MZSidebar);
+	
+	        return _possibleConstructorReturn(this, (MZSidebar.__proto__ || Object.getPrototypeOf(MZSidebar)).apply(this, arguments));
+	    }
+	
+	    _createClass(MZSidebar, [{
+	        key: 'render',
+	        value: function render() {
+	            var className = 'mz-sidebar ' + this.props.className;
+	            return _react2.default.createElement(
+	                'div',
+	                { className: className + (' ' + (this.props.active ? 'active' : '')) },
+	                this.props.children
+	            );
+	        }
+	    }]);
+	
+	    return MZSidebar;
+	}(_react2.default.Component);
+	
+	MZSidebar.propTypes = {
+	    className: _react2.default.PropTypes.string,
+	    active: _react2.default.PropTypes.bool
+	};
+	
+	MZSidebar.defaultProps = {
+	    className: '',
+	    active: false
 	};
 
 /***/ }
