@@ -6,11 +6,12 @@
 @mixin mzTapAnimationContainer($color: $mzCB7) {
   position: relative;
   overflow: hidden;
+  z-index: 1;
 
   .mz-tap-animation:before, .mz-tap-animation:after {
     content: "";
     box-sizing: border-box;
-    background: darken($color, 5%);
+    background: darken($color, 15%);
     display: block;
     position: absolute;
     z-index: 0;
@@ -32,11 +33,5 @@
     left: 50%;
     right: 50%;
     transition: 0s;
-  }
-  &:hover {
-    background: lighten($color, 10%);
-  }
-  &:active {
-    background: lighten($color, 10%);
   }
 }

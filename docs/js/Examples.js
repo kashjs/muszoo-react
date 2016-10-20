@@ -38,6 +38,14 @@ export class Examples extends React.Component {
             <MZButton className="mz-transparent mz-warning">.mz-warning</MZButton>
             <MZButton className="mz-transparent mz-danger">.mz-danger</MZButton>
 
+            <p>.mz-round</p>
+            <MZButton className="mz-round mz-default"><i className="fa fa-play" aria-hidden="true"></i></MZButton>
+            <MZButton className="mz-round mz-danger"><i className="fa fa-stop" aria-hidden="true"></i></MZButton>
+            <MZButton className="mz-round mz-prime"><i className="fa fa-pause" aria-hidden="true"></i></MZButton>
+            <MZButton className="mz-round mz-success"><i className="fa fa-random" aria-hidden="true"></i></MZButton>
+            <MZButton className="mz-round mz-info">.mz-info .mz-round</MZButton>
+            <MZButton className="mz-round mz-transparent mz-warning">.mz-warning .mz-transparent .mz-round</MZButton>
+
 
             <h2>Navbar</h2>
             <p>.mz-dark</p>

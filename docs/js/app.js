@@ -19,7 +19,7 @@ export class App extends React.Component {
         var self = this;
         return <div>
             <div className="sideBar">
-                <MZSidebar className="mz-fixed-left"
+                <MZSidebar className="mz-fixed-left mz-dark"
                            active={this.state.showSidebar}>
                     <MZNavbar className="mz-flex mz-dark mz-flex-align-stretch">
                         <MZNavbarGroup className="mz-flex-group-left"></MZNavbarGroup>
