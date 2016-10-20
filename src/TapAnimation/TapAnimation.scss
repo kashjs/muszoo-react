@@ -1,0 +1,42 @@
+.mz-tap-animation-text {
+  position: relative;
+  z-index: 1;
+}
+
+@mixin mzTapAnimationContainer($color: $mzCB7) {
+  position: relative;
+  overflow: hidden;
+
+  .mz-tap-animation:before, .mz-tap-animation:after {
+    content: "";
+    box-sizing: border-box;
+    background: darken($color, 5%);
+    display: block;
+    position: absolute;
+    z-index: 0;
+    border-radius: 50%;
+    top: -150%;
+    bottom: -150%;
+    left: -250%;
+    right: -50%;
+    opacity: 0;
+    @include mzAnimationSlide();
+  }
+  .mz-tap-animation:after {
+    background: transparent;
+  }
+  &:active .mz-tap-animation:before {
+    opacity: 1;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    transition: 0s;
+  }
+  &:hover {
+    background: lighten($color, 10%);
+  }
+  &:active {
+    background: lighten($color, 10%);
+  }
+}
