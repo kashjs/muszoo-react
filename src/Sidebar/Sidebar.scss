@@ -1,31 +1,33 @@
-.mz-sidebar {
+@mixin mzGenerateSidebar($color, $textColor) {
   position: fixed;
   z-index: $mzSidebarFixedZIndex;
   overflow: hidden;
   top: 0;
   bottom: 0;
-  background-color: $mzCSidebarDark;
-  color: $mzCTextLight;
+  background-color: $color;
+  color: $textColor;
   height: 100%;
   width: 300px;
   @include mzAnimationSlide(.2s);
-
   &.mz-fixed-left {
     left: -300px;
     &.active {
       left: 0px;
     }
   }
-
   &.mz-fixed-right {
     right: -300px;
     &.active {
       right: 0px;
     }
   }
+}
 
+.mz-sidebar {
+  &.mz-dark {
+    @include mzGenerateSidebar($mzCSidebarDark, $mzCTextLight);
+  }
   &.mz-light {
-    background-color: $mzCSidebarLight;
-    color: $mzCTextDark;
+    @include mzGenerateSidebar($mzCSidebarLight, $mzCTextDark);
   }
 }

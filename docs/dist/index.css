@@ -536,7 +536,7 @@ a {
   .mz-flex .mz-flex-group-right {
     order: 1; }
 
-.mz-sidebar {
+.mz-sidebar.mz-dark {
   position: fixed;
   z-index: 1001;
   overflow: hidden;
@@ -547,17 +547,34 @@ a {
   height: 100%;
   width: 300px;
   transition: all 0.2s ease; }
-  .mz-sidebar.mz-fixed-left {
+  .mz-sidebar.mz-dark.mz-fixed-left {
     left: -300px; }
-    .mz-sidebar.mz-fixed-left.active {
+    .mz-sidebar.mz-dark.mz-fixed-left.active {
       left: 0px; }
-  .mz-sidebar.mz-fixed-right {
+  .mz-sidebar.mz-dark.mz-fixed-right {
     right: -300px; }
-    .mz-sidebar.mz-fixed-right.active {
+    .mz-sidebar.mz-dark.mz-fixed-right.active {
       right: 0px; }
-  .mz-sidebar.mz-light {
-    background-color: #efefef;
-    color: #333333; }
+
+.mz-sidebar.mz-light {
+  position: fixed;
+  z-index: 1001;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  background-color: #efefef;
+  color: #333333;
+  height: 100%;
+  width: 300px;
+  transition: all 0.2s ease; }
+  .mz-sidebar.mz-light.mz-fixed-left {
+    left: -300px; }
+    .mz-sidebar.mz-light.mz-fixed-left.active {
+      left: 0px; }
+  .mz-sidebar.mz-light.mz-fixed-right {
+    right: -300px; }
+    .mz-sidebar.mz-light.mz-fixed-right.active {
+      right: 0px; }
 
 html,
 body,

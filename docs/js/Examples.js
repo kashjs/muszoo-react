@@ -40,6 +40,7 @@ export class Examples extends React.Component {
 
 
             <h2>Navbar</h2>
+            <p>.mz-dark</p>
             <MZNavbar className="mz-flex mz-dark mz-flex-align-stretch">
                 <MZNavbarGroup className="mz-flex-group-left">
                     <MZNavbarBrand>MusZoo React</MZNavbarBrand>
@@ -71,9 +72,8 @@ export class Examples extends React.Component {
             </MZNavbar>
 
             <h2>Sidenav</h2>
-
-            <MZButton onClick={this.handleSidebarToggleDark.bind(self)}>Regular Sidenav - Toggle</MZButton>
-            <MZSidebar className="mz-fixed-right"
+            <MZButton onClick={this.handleSidebarToggleDark.bind(self)}>.mz-dark</MZButton>
+            <MZSidebar className="mz-fixed-right mz-dark"
                        active={this.state.showSidebarDark}>
                 <MZNavbar className="mz-flex mz-dark mz-flex-align-stretch">
                     <MZNavbarGroup className="mz-flex-group-left">
@@ -86,7 +86,7 @@ export class Examples extends React.Component {
                 </MZNavbar>
             </MZSidebar>
 
-            <MZButton onClick={this.handleSidebarToggleLight.bind(self)}>Light Sidenav - Toggle</MZButton>
+            <MZButton onClick={this.handleSidebarToggleLight.bind(self)}>.mz-light</MZButton>
             <MZSidebar className="mz-fixed-right mz-light"
                        active={this.state.showSidebarLight}>
                 <MZNavbar className="mz-flex mz-light mz-flex-align-stretch">
