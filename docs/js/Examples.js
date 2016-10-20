@@ -23,25 +23,24 @@ export class Examples extends React.Component {
         var self = this;
         return <div>
             <h2>Buttons</h2>
-            <p>regular</p>
-            <MZButton>Default</MZButton>
-            <MZButton className="mz-prime">Prime</MZButton>
-            <MZButton className="mz-success">Success</MZButton>
-            <MZButton className="mz-info">Info</MZButton>
-            <MZButton className="mz-warning">Warning</MZButton>
-            <MZButton className="mz-danger">Danger</MZButton>
+            <MZButton className="mz-default">.mz-default</MZButton>
+            <MZButton className="mz-prime">.mz-prime</MZButton>
+            <MZButton className="mz-success">.mz-success</MZButton>
+            <MZButton className="mz-info">.mz-info</MZButton>
+            <MZButton className="mz-warning">.mz-warning</MZButton>
+            <MZButton className="mz-danger">.mz-danger</MZButton>
 
-            <p>transparent</p>
-            <MZButton className="mz-transparent">Default</MZButton>
-            <MZButton className="mz-prime mz-transparent">Prime</MZButton>
-            <MZButton className="mz-success mz-transparent">Success</MZButton>
-            <MZButton className="mz-info mz-transparent">Info</MZButton>
-            <MZButton className="mz-warning mz-transparent">Warning</MZButton>
-            <MZButton className="mz-danger mz-transparent">Danger</MZButton>
+            <p>.mz-transparent</p>
+            <MZButton className="mz-transparent mz-default">.mz-default</MZButton>
+            <MZButton className="mz-transparent mz-prime">.mz-prime</MZButton>
+            <MZButton className="mz-transparent mz-success">.mz-success</MZButton>
+            <MZButton className="mz-transparent mz-info">.mz-info</MZButton>
+            <MZButton className="mz-transparent mz-warning">.mz-warning</MZButton>
+            <MZButton className="mz-transparent mz-danger">.mz-danger</MZButton>
 
 
             <h2>Navbar</h2>
-            <MZNavbar className="mz-flex mz-flex-align-stretch">
+            <MZNavbar className="mz-flex mz-dark mz-flex-align-stretch">
                 <MZNavbarGroup className="mz-flex-group-left">
                     <MZNavbarBrand>MusZoo React</MZNavbarBrand>
                 </MZNavbarGroup>
@@ -76,7 +75,7 @@ export class Examples extends React.Component {
             <MZButton onClick={this.handleSidebarToggleDark.bind(self)}>Regular Sidenav - Toggle</MZButton>
             <MZSidebar className="mz-fixed-right"
                        active={this.state.showSidebarDark}>
-                <MZNavbar className="mz-flex mz-flex-align-stretch">
+                <MZNavbar className="mz-flex mz-dark mz-flex-align-stretch">
                     <MZNavbarGroup className="mz-flex-group-left">
                         <MZNavbarItem onClick={this.handleSidebarToggleDark.bind(self)}><i className="fa fa-angle-right"></i></MZNavbarItem>
                     </MZNavbarGroup>

@@ -1,16 +1,20 @@
-.mz-navbar {
+@mixin mzGenerateNavbar($color, $textColor) {
   @include mzElementReset();
   $mzNavHeight: 60px;
-  background-color: $mzCNavDark;
-  color: $mzCTextLight;
   height: $mzNavHeight;
   line-height: $mzNavHeight;
   font-size: $mzNavbarFontSize;
-  border: 1px solid darken($mzCNavDark, 20%);
-  z-index: 1;
+  background-color: $color;
+  color: $textColor;
+  border: 1px solid darken($color, 20%);
+
+  &.mz-shadow {
+    @include mzShadow(5px);
+  }
 
   &.mz-fixed-top {
     position: fixed;
+    z-index: $mzNavbarFixedZIndex;
     top: 0;
     left: 0;
     right: 0;
@@ -28,7 +32,7 @@
       }
     }
     .mz-navbar-item:last-child {
-      border-right: 1px solid darken($mzCNavDark, 20%);
+      border-right: 1px solid darken($color, 20%);
     }
   }
 
@@ -42,36 +46,20 @@
   .mz-navbar-item {
     @include mzElementReset();
     @include mzActionItem();
-    color: $mzCTextLight;
     padding: 0 $mzPL4;
     display: inline-block;
-    border-left: 1px solid darken($mzCNavDark, 20%);
-    @include mzAnimationTap($mzCNavDark);
+    border-left: 1px solid darken($color, 20%);
+    min-width: 35px;
+    text-align: center;
+    @include mzTapAnimationContainer($color);
   }
+}
 
+.mz-navbar {
+  &.mz-dark {
+    @include mzGenerateNavbar($mzCNavDark, $mzCTextLight);
+  }
   &.mz-light {
-    border: 1px solid darken($mzCNavLight, 20%);
-    background-color: $mzCNavLight;
-    color: $mzCTextDark;
-    .mz-navbar-group {
-      &.mz-flex-group-right {
-        .mz-navbar-item:last-child {
-          border-right: none;
-        }
-      }
-      &.mz-flex-group-left {
-        .mz-navbar-item:first-child {
-          border-left: none;
-        }
-      }
-      .mz-navbar-item:last-child {
-        border-right: 1px solid darken($mzCNavLight, 20%);
-      }
-    }
-    .mz-navbar-item {
-      border-left: 1px solid darken($mzCNavLight, 20%);
-      color: $mzCTextDark;
-      @include mzAnimationTap($mzCNavLight);
-    }
+    @include mzGenerateNavbar($mzCNavLight, $mzCTextDark);
   }
 }

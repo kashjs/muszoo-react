@@ -1,9 +1,14 @@
 import React from 'react';
+import {TapAnimationContent} from '../TapAnimation/TapAnimation';
 
 export class MZButton extends React.Component {
     render() {
         let className = 'mz-button ' + this.props.className;
-        return <button onClick={this.props.onClick} className={className}>{this.props.children}</button>
+        return <button onClick={this.props.onClick} className={className}>
+            <TapAnimationContent>
+                {this.props.children}
+            </TapAnimationContent>
+        </button>
     }
 }
 

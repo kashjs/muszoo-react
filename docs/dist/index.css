@@ -1,10 +1,12 @@
+.mz-tap-animation-text {
+  position: relative;
+  z-index: 1; }
+
 .mz-button {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
-  margin: 0;
-  padding: 0;
   cursor: pointer;
   -webkit-tap-highlight-color: none;
   -webkit-touch-callout: none;
@@ -19,10 +21,8 @@
   border: 1px solid #b5bcc1;
   background: #D1D5D8;
   height: 40px;
-  line-height: 40px;
   padding: 0 12px;
   border-radius: 4px;
-  margin-left: 12px;
   color: #333333;
   position: relative;
   overflow: hidden; }
@@ -32,16 +32,19 @@
     background: transparent;
     backgorund-color: none;
     color: #D1D5D8; }
+    .mz-button.mz-transparent.mz-default {
+      color: #333333; }
     .mz-button.mz-transparent:hover {
       color: #333333; }
     .mz-button.mz-transparent:active {
       color: #333333; }
-  .mz-button:before, .mz-button:after {
+  .mz-button .mz-tap-animation:before, .mz-button .mz-tap-animation:after {
     content: "";
     box-sizing: border-box;
     background: #c3c8cc;
     display: block;
     position: absolute;
+    z-index: 0;
     border-radius: 50%;
     top: -150%;
     bottom: -150%;
@@ -49,9 +52,9 @@
     right: -50%;
     opacity: 0;
     transition: all 1s ease; }
-  .mz-button:after {
+  .mz-button .mz-tap-animation:after {
     background: transparent; }
-  .mz-button:active:before {
+  .mz-button:active .mz-tap-animation:before {
     opacity: 1;
     top: 50%;
     bottom: 50%;
@@ -62,34 +65,35 @@
     background: #edeeef; }
   .mz-button:active {
     background: #edeeef; }
-  .mz-button.mz-prime {
+  .mz-button.mz-default {
     box-sizing: border-box;
     font-size: 13.2px;
     font-weight: 500;
-    border: 1px solid #217dbb;
-    background: #3498DB;
+    border: 1px solid #b5bcc1;
+    background: #D1D5D8;
     height: 40px;
-    line-height: 40px;
     padding: 0 12px;
     border-radius: 4px;
-    margin-left: 12px;
-    color: white;
+    color: #333333;
     position: relative;
     overflow: hidden; }
-    .mz-button.mz-prime.mz-transparent {
+    .mz-button.mz-default.mz-transparent {
       background: transparent;
       backgorund-color: none;
-      color: #3498DB; }
-      .mz-button.mz-prime.mz-transparent:hover {
-        color: white; }
-      .mz-button.mz-prime.mz-transparent:active {
-        color: white; }
-    .mz-button.mz-prime:before, .mz-button.mz-prime:after {
+      color: #D1D5D8; }
+      .mz-button.mz-default.mz-transparent.mz-default {
+        color: #333333; }
+      .mz-button.mz-default.mz-transparent:hover {
+        color: #333333; }
+      .mz-button.mz-default.mz-transparent:active {
+        color: #333333; }
+    .mz-button.mz-default .mz-tap-animation:before, .mz-button.mz-default .mz-tap-animation:after {
       content: "";
       box-sizing: border-box;
-      background: #258cd1;
+      background: #c3c8cc;
       display: block;
       position: absolute;
+      z-index: 0;
       border-radius: 50%;
       top: -150%;
       bottom: -150%;
@@ -97,9 +101,58 @@
       right: -50%;
       opacity: 0;
       transition: all 1s ease; }
-    .mz-button.mz-prime:after {
+    .mz-button.mz-default .mz-tap-animation:after {
       background: transparent; }
-    .mz-button.mz-prime:active:before {
+    .mz-button.mz-default:active .mz-tap-animation:before {
+      opacity: 1;
+      top: 50%;
+      bottom: 50%;
+      left: 50%;
+      right: 50%;
+      transition: 0s; }
+    .mz-button.mz-default:hover {
+      background: #edeeef; }
+    .mz-button.mz-default:active {
+      background: #edeeef; }
+  .mz-button.mz-prime {
+    box-sizing: border-box;
+    font-size: 13.2px;
+    font-weight: 500;
+    border: 1px solid #217dbb;
+    background: #3498DB;
+    height: 40px;
+    padding: 0 12px;
+    border-radius: 4px;
+    color: white;
+    position: relative;
+    overflow: hidden; }
+    .mz-button.mz-prime.mz-transparent {
+      background: transparent;
+      backgorund-color: none;
+      color: #3498DB; }
+      .mz-button.mz-prime.mz-transparent.mz-default {
+        color: white; }
+      .mz-button.mz-prime.mz-transparent:hover {
+        color: white; }
+      .mz-button.mz-prime.mz-transparent:active {
+        color: white; }
+    .mz-button.mz-prime .mz-tap-animation:before, .mz-button.mz-prime .mz-tap-animation:after {
+      content: "";
+      box-sizing: border-box;
+      background: #258cd1;
+      display: block;
+      position: absolute;
+      z-index: 0;
+      border-radius: 50%;
+      top: -150%;
+      bottom: -150%;
+      left: -250%;
+      right: -50%;
+      opacity: 0;
+      transition: all 1s ease; }
+    .mz-button.mz-prime .mz-tap-animation:after {
+      background: transparent; }
+    .mz-button.mz-prime:active .mz-tap-animation:before {
       opacity: 1;
       top: 50%;
       bottom: 50%;
@@ -117,10 +170,8 @@
     border: 1px solid #148f77;
     background: #1ABC9C;
     height: 40px;
-    line-height: 40px;
     padding: 0 12px;
     border-radius: 4px;
-    margin-left: 12px;
     color: white;
     position: relative;
     overflow: hidden; }
@@ -128,16 +179,19 @@
       background: transparent;
       backgorund-color: none;
       color: #1ABC9C; }
+      .mz-button.mz-success.mz-transparent.mz-default {
+        color: white; }
       .mz-button.mz-success.mz-transparent:hover {
         color: white; }
       .mz-button.mz-success.mz-transparent:active {
         color: white; }
-    .mz-button.mz-success:before, .mz-button.mz-success:after {
+    .mz-button.mz-success .mz-tap-animation:before, .mz-button.mz-success .mz-tap-animation:after {
       content: "";
       box-sizing: border-box;
       background: #17a689;
       display: block;
       position: absolute;
+      z-index: 0;
       border-radius: 50%;
       top: -150%;
       bottom: -150%;
@@ -145,9 +199,9 @@
       right: -50%;
       opacity: 0;
       transition: all 1s ease; }
-    .mz-button.mz-success:after {
+    .mz-button.mz-success .mz-tap-animation:after {
       background: transparent; }
-    .mz-button.mz-success:active:before {
+    .mz-button.mz-success:active .mz-tap-animation:before {
       opacity: 1;
       top: 50%;
       bottom: 50%;
@@ -165,10 +219,8 @@
     border: 1px solid #2d9fcb;
     background: #52B3D9;
     height: 40px;
-    line-height: 40px;
     padding: 0 12px;
     border-radius: 4px;
-    margin-left: 12px;
     color: white;
     position: relative;
     overflow: hidden; }
@@ -176,16 +228,19 @@
       background: transparent;
       backgorund-color: none;
       color: #52B3D9; }
+      .mz-button.mz-info.mz-transparent.mz-default {
+        color: white; }
       .mz-button.mz-info.mz-transparent:hover {
         color: white; }
       .mz-button.mz-info.mz-transparent:active {
         color: white; }
-    .mz-button.mz-info:before, .mz-button.mz-info:after {
+    .mz-button.mz-info .mz-tap-animation:before, .mz-button.mz-info .mz-tap-animation:after {
       content: "";
       box-sizing: border-box;
       background: #3daad4;
       display: block;
       position: absolute;
+      z-index: 0;
       border-radius: 50%;
       top: -150%;
       bottom: -150%;
@@ -193,9 +248,9 @@
       right: -50%;
       opacity: 0;
       transition: all 1s ease; }
-    .mz-button.mz-info:after {
+    .mz-button.mz-info .mz-tap-animation:after {
       background: transparent; }
-    .mz-button.mz-info:active:before {
+    .mz-button.mz-info:active .mz-tap-animation:before {
       opacity: 1;
       top: 50%;
       bottom: 50%;
@@ -213,10 +268,8 @@
     border: 1px solid #c29d0b;
     background: #F1C40F;
     height: 40px;
-    line-height: 40px;
     padding: 0 12px;
     border-radius: 4px;
-    margin-left: 12px;
     color: white;
     position: relative;
     overflow: hidden; }
@@ -224,16 +277,19 @@
       background: transparent;
       backgorund-color: none;
       color: #F1C40F; }
+      .mz-button.mz-warning.mz-transparent.mz-default {
+        color: white; }
       .mz-button.mz-warning.mz-transparent:hover {
         color: white; }
       .mz-button.mz-warning.mz-transparent:active {
         color: white; }
-    .mz-button.mz-warning:before, .mz-button.mz-warning:after {
+    .mz-button.mz-warning .mz-tap-animation:before, .mz-button.mz-warning .mz-tap-animation:after {
       content: "";
       box-sizing: border-box;
       background: #dab10d;
       display: block;
       position: absolute;
+      z-index: 0;
       border-radius: 50%;
       top: -150%;
       bottom: -150%;
@@ -241,9 +297,9 @@
       right: -50%;
       opacity: 0;
       transition: all 1s ease; }
-    .mz-button.mz-warning:after {
+    .mz-button.mz-warning .mz-tap-animation:after {
       background: transparent; }
-    .mz-button.mz-warning:active:before {
+    .mz-button.mz-warning:active .mz-tap-animation:before {
       opacity: 1;
       top: 50%;
       bottom: 50%;
@@ -261,10 +317,8 @@
     border: 1px solid #d62c1a;
     background: #E74C3C;
     height: 40px;
-    line-height: 40px;
     padding: 0 12px;
     border-radius: 4px;
-    margin-left: 12px;
     color: white;
     position: relative;
     overflow: hidden; }
@@ -272,16 +326,19 @@
       background: transparent;
       backgorund-color: none;
       color: #E74C3C; }
+      .mz-button.mz-danger.mz-transparent.mz-default {
+        color: white; }
       .mz-button.mz-danger.mz-transparent:hover {
         color: white; }
       .mz-button.mz-danger.mz-transparent:active {
         color: white; }
-    .mz-button.mz-danger:before, .mz-button.mz-danger:after {
+    .mz-button.mz-danger .mz-tap-animation:before, .mz-button.mz-danger .mz-tap-animation:after {
       content: "";
       box-sizing: border-box;
       background: #e43725;
       display: block;
       position: absolute;
+      z-index: 0;
       border-radius: 50%;
       top: -150%;
       bottom: -150%;
@@ -289,9 +346,9 @@
       right: -50%;
       opacity: 0;
       transition: all 1s ease; }
-    .mz-button.mz-danger:after {
+    .mz-button.mz-danger .mz-tap-animation:after {
       background: transparent; }
-    .mz-button.mz-danger:active:before {
+    .mz-button.mz-danger:active .mz-tap-animation:before {
       opacity: 1;
       top: 50%;
       bottom: 50%;
@@ -303,43 +360,45 @@
     .mz-button.mz-danger:active {
       background: #ed7669; }
 
-.mz-navbar {
+a {
+  color: inherit;
+  text-decoration: inherit; }
+
+.mz-navbar.mz-dark {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
-  margin: 0;
-  padding: 0;
-  background-color: #112233;
-  color: white;
   height: 60px;
   line-height: 60px;
   font-size: 15.6px;
-  border: 1px solid black;
-  z-index: 1; }
-  .mz-navbar.mz-fixed-top {
+  background-color: #2b2935;
+  color: white;
+  border: 1px solid black; }
+  .mz-navbar.mz-dark.mz-shadow {
+    box-shadow: 0 0 5px 0 #333333; }
+  .mz-navbar.mz-dark.mz-fixed-top {
     position: fixed;
+    z-index: 1000;
     top: 0;
     left: 0;
     right: 0; }
-  .mz-navbar .mz-navbar-group.mz-flex-group-right .mz-navbar-item:last-child {
+  .mz-navbar.mz-dark .mz-navbar-group.mz-flex-group-right .mz-navbar-item:last-child {
     border-right: none; }
-  .mz-navbar .mz-navbar-group.mz-flex-group-left .mz-navbar-item:first-child {
+  .mz-navbar.mz-dark .mz-navbar-group.mz-flex-group-left .mz-navbar-item:first-child {
     border-left: none; }
-  .mz-navbar .mz-navbar-group .mz-navbar-item:last-child {
+  .mz-navbar.mz-dark .mz-navbar-group .mz-navbar-item:last-child {
     border-right: 1px solid black; }
-  .mz-navbar .mz-navbar-brand {
+  .mz-navbar.mz-dark .mz-navbar-brand {
     padding: 0 8px;
     margin-right: 16px;
     display: inline-block;
     font-size: 18.72px; }
-  .mz-navbar .mz-navbar-item {
+  .mz-navbar.mz-dark .mz-navbar-item {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     border-radius: 0;
-    margin: 0;
-    padding: 0;
     cursor: pointer;
     -webkit-tap-highlight-color: none;
     -webkit-touch-callout: none;
@@ -348,20 +407,22 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    color: white;
     padding: 0 12px;
     display: inline-block;
     border-left: 1px solid black;
+    min-width: 35px;
+    text-align: center;
     position: relative;
     overflow: hidden; }
-    .mz-navbar .mz-navbar-item:focus {
+    .mz-navbar.mz-dark .mz-navbar-item:focus {
       outline: 0; }
-    .mz-navbar .mz-navbar-item:before, .mz-navbar .mz-navbar-item:after {
+    .mz-navbar.mz-dark .mz-navbar-item .mz-tap-animation:before, .mz-navbar.mz-dark .mz-navbar-item .mz-tap-animation:after {
       content: "";
       box-sizing: border-box;
-      background: #0b1520;
+      background: #1f1e27;
       display: block;
       position: absolute;
+      z-index: 0;
       border-radius: 50%;
       top: -150%;
       bottom: -150%;
@@ -369,60 +430,99 @@
       right: -50%;
       opacity: 0;
       transition: all 1s ease; }
-    .mz-navbar .mz-navbar-item:after {
+    .mz-navbar.mz-dark .mz-navbar-item .mz-tap-animation:after {
       background: transparent; }
-    .mz-navbar .mz-navbar-item:active:before {
+    .mz-navbar.mz-dark .mz-navbar-item:active .mz-tap-animation:before {
       opacity: 1;
       top: 50%;
       bottom: 50%;
       left: 50%;
       right: 50%;
       transition: 0s; }
-    .mz-navbar .mz-navbar-item:hover {
-      background: #1e3c59; }
-    .mz-navbar .mz-navbar-item:active {
-      background: #1e3c59; }
-  .mz-navbar.mz-light {
-    border: 1px solid #bcbcbc;
-    background-color: #efefef;
-    color: #333333; }
-    .mz-navbar.mz-light .mz-navbar-group.mz-flex-group-right .mz-navbar-item:last-child {
-      border-right: none; }
-    .mz-navbar.mz-light .mz-navbar-group.mz-flex-group-left .mz-navbar-item:first-child {
-      border-left: none; }
-    .mz-navbar.mz-light .mz-navbar-group .mz-navbar-item:last-child {
-      border-right: 1px solid #bcbcbc; }
-    .mz-navbar.mz-light .mz-navbar-item {
-      border-left: 1px solid #bcbcbc;
-      color: #333333;
-      position: relative;
-      overflow: hidden; }
-      .mz-navbar.mz-light .mz-navbar-item:before, .mz-navbar.mz-light .mz-navbar-item:after {
-        content: "";
-        box-sizing: border-box;
-        background: #e2e2e2;
-        display: block;
-        position: absolute;
-        border-radius: 50%;
-        top: -150%;
-        bottom: -150%;
-        left: -250%;
-        right: -50%;
-        opacity: 0;
-        transition: all 1s ease; }
-      .mz-navbar.mz-light .mz-navbar-item:after {
-        background: transparent; }
-      .mz-navbar.mz-light .mz-navbar-item:active:before {
-        opacity: 1;
-        top: 50%;
-        bottom: 50%;
-        left: 50%;
-        right: 50%;
-        transition: 0s; }
-      .mz-navbar.mz-light .mz-navbar-item:hover {
-        background: white; }
-      .mz-navbar.mz-light .mz-navbar-item:active {
-        background: white; }
+    .mz-navbar.mz-dark .mz-navbar-item:hover {
+      background: #423f52; }
+    .mz-navbar.mz-dark .mz-navbar-item:active {
+      background: #423f52; }
+
+.mz-navbar.mz-light {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  height: 60px;
+  line-height: 60px;
+  font-size: 15.6px;
+  background-color: #efefef;
+  color: #333333;
+  border: 1px solid #bcbcbc; }
+  .mz-navbar.mz-light.mz-shadow {
+    box-shadow: 0 0 5px 0 #333333; }
+  .mz-navbar.mz-light.mz-fixed-top {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0; }
+  .mz-navbar.mz-light .mz-navbar-group.mz-flex-group-right .mz-navbar-item:last-child {
+    border-right: none; }
+  .mz-navbar.mz-light .mz-navbar-group.mz-flex-group-left .mz-navbar-item:first-child {
+    border-left: none; }
+  .mz-navbar.mz-light .mz-navbar-group .mz-navbar-item:last-child {
+    border-right: 1px solid #bcbcbc; }
+  .mz-navbar.mz-light .mz-navbar-brand {
+    padding: 0 8px;
+    margin-right: 16px;
+    display: inline-block;
+    font-size: 18.72px; }
+  .mz-navbar.mz-light .mz-navbar-item {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    cursor: pointer;
+    -webkit-tap-highlight-color: none;
+    -webkit-touch-callout: none;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 0 12px;
+    display: inline-block;
+    border-left: 1px solid #bcbcbc;
+    min-width: 35px;
+    text-align: center;
+    position: relative;
+    overflow: hidden; }
+    .mz-navbar.mz-light .mz-navbar-item:focus {
+      outline: 0; }
+    .mz-navbar.mz-light .mz-navbar-item .mz-tap-animation:before, .mz-navbar.mz-light .mz-navbar-item .mz-tap-animation:after {
+      content: "";
+      box-sizing: border-box;
+      background: #e2e2e2;
+      display: block;
+      position: absolute;
+      z-index: 0;
+      border-radius: 50%;
+      top: -150%;
+      bottom: -150%;
+      left: -250%;
+      right: -50%;
+      opacity: 0;
+      transition: all 1s ease; }
+    .mz-navbar.mz-light .mz-navbar-item .mz-tap-animation:after {
+      background: transparent; }
+    .mz-navbar.mz-light .mz-navbar-item:active .mz-tap-animation:before {
+      opacity: 1;
+      top: 50%;
+      bottom: 50%;
+      left: 50%;
+      right: 50%;
+      transition: 0s; }
+    .mz-navbar.mz-light .mz-navbar-item:hover {
+      background: white; }
+    .mz-navbar.mz-light .mz-navbar-item:active {
+      background: white; }
 
 .mz-flex {
   display: flex;
@@ -438,21 +538,23 @@
 
 .mz-sidebar {
   position: fixed;
-  z-index: 2;
+  z-index: 1001;
   overflow: hidden;
   top: 0;
   bottom: 0;
-  background-color: #112233;
+  background-color: #2b2935;
   color: white;
   height: 100%;
-  width: 0;
-  transition: all 0.3s ease; }
-  .mz-sidebar.active {
-    width: 300px; }
+  width: 300px;
+  transition: all 0.2s ease; }
   .mz-sidebar.mz-fixed-left {
-    left: 0; }
+    left: -300px; }
+    .mz-sidebar.mz-fixed-left.active {
+      left: 0px; }
   .mz-sidebar.mz-fixed-right {
-    right: 0; }
+    right: -300px; }
+    .mz-sidebar.mz-fixed-right.active {
+      right: 0px; }
   .mz-sidebar.mz-light {
     background-color: #efefef;
     color: #333333; }
@@ -467,3 +569,6 @@ ol {
 body {
   padding: 60px 20px;
   font-family: 'Source Sans Pro', sans-serif; }
+
+button {
+  margin: 5px; }

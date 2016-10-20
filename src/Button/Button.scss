@@ -2,17 +2,13 @@ $mzButtonHeight: 40px;
 
 @mixin mzGenerateButton($color, $padding, $textColor: $mzCTextLight) {
   box-sizing: border-box;
-  //@include mzShadow(2px);
-
   font-size: $mzButtonFontSize;
   font-weight: $mzButtonFontWeight;
   border: 1px solid darken($color, 10%);
   background: $color;
   height: $mzButtonHeight;
-  line-height: $mzButtonHeight;
   padding: 0 $mzPL4;
   border-radius: $mzBtnRadius;
-  margin-left: $padding;
   color: $textColor;
 
 
@@ -20,6 +16,10 @@ $mzButtonHeight: 40px;
     background: transparent;
     backgorund-color: none;
     color: $color;
+
+    &.mz-default {
+      color: $textColor;
+    }
 
     &:hover {
       color: $textColor;
@@ -30,7 +30,7 @@ $mzButtonHeight: 40px;
     }
   }
 
-  @include mzAnimationTap($color);
+  @include mzTapAnimationContainer($color);
 }
 
 .mz-button {
@@ -38,6 +38,10 @@ $mzButtonHeight: 40px;
   @include mzActionItem();
 
   @include mzGenerateButton($mzCB2, $mzPL4, $mzCTextDark);
+
+  &.mz-default {
+    @include mzGenerateButton($mzCB2, $mzPL4, $mzCTextDark);
+  }
 
   &.mz-prime {
     @include mzGenerateButton($mzCB5, $mzPL4);
@@ -58,4 +62,9 @@ $mzButtonHeight: 40px;
   &.mz-danger {
     @include mzGenerateButton($mzCB9, $mzPL4);
   }
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
 }

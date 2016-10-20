@@ -1,24 +1,27 @@
 .mz-sidebar {
   position: fixed;
-  z-index: 2;
+  z-index: $mzSidebarFixedZIndex;
   overflow: hidden;
   top: 0;
   bottom: 0;
   background-color: $mzCSidebarDark;
   color: $mzCTextLight;
   height: 100%;
-  width: 0;
-  @include mzAnimationSlide(.3s);
-  &.active {
-    width: 300px;
-  }
+  width: 300px;
+  @include mzAnimationSlide(.2s);
 
   &.mz-fixed-left {
-    left: 0;
+    left: -300px;
+    &.active {
+      left: 0px;
+    }
   }
 
   &.mz-fixed-right {
-    right: 0;
+    right: -300px;
+    &.active {
+      right: 0px;
+    }
   }
 
   &.mz-light {

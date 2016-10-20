@@ -21,7 +21,7 @@ export class App extends React.Component {
             <div className="sideBar">
                 <MZSidebar className="mz-fixed-left"
                            active={this.state.showSidebar}>
-                    <MZNavbar className="mz-flex mz-flex-align-stretch">
+                    <MZNavbar className="mz-flex mz-dark mz-flex-align-stretch">
                         <MZNavbarGroup className="mz-flex-group-left"></MZNavbarGroup>
                         <MZNavbarGroup>
                             Sidebar Title
@@ -33,7 +33,7 @@ export class App extends React.Component {
                 </MZSidebar>
             </div>
             <div>
-                <MZNavbar className="mz-flex mz-fixed-top mz-flex-align-stretch">
+                <MZNavbar className="mz-flex mz-dark mz-fixed-top mz-shadow mz-flex-align-stretch">
                     <MZNavbarGroup className="mz-flex-group-left">
                         <MZNavbarItem onClick={this.handleClick.bind(this)}><i className="fa fa-bars"></i></MZNavbarItem>
                     </MZNavbarGroup>

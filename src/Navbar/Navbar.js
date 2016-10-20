@@ -1,4 +1,5 @@
 import React from 'react';
+import {TapAnimationContent} from '../TapAnimation/TapAnimation';
 
 export class MZNavbar extends React.Component {
     render() {
@@ -50,7 +51,12 @@ MZNavbarBrand.defaultProps = {
 export class MZNavbarItem extends React.Component {
     render() {
         let className = 'mz-navbar-item ' + this.props.className;
-        return <a type="button" onClick={this.props.onClick} className={className} href={this.props.href}>{this.props.children}</a>
+        return <div onClick={this.props.onClick} className={className}>
+                <TapAnimationContent>
+                    <a type="button" href={this.props.href}>{this.props.children}</a>
+                </TapAnimationContent>
+            </div>
+
     }
 }
 
