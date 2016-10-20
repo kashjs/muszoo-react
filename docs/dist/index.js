@@ -21965,9 +21965,9 @@
 	
 	var _Examples = __webpack_require__(/*! ./Examples */ 173);
 	
-	var _Navbar = __webpack_require__(/*! muszoo-react/Navbar */ 176);
+	var _Navbar = __webpack_require__(/*! muszoo-react/Navbar */ 177);
 	
-	var _Sidebar = __webpack_require__(/*! muszoo-react/Sidebar */ 178);
+	var _Sidebar = __webpack_require__(/*! muszoo-react/Sidebar */ 179);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -22008,11 +22008,11 @@
 	                    { className: 'sideBar' },
 	                    _react2.default.createElement(
 	                        _Sidebar.MZSidebar,
-	                        { className: 'mz-fixed-left',
+	                        { className: 'mz-fixed-left mz-dark',
 	                            active: this.state.showSidebar },
 	                        _react2.default.createElement(
 	                            _Navbar.MZNavbar,
-	                            { className: 'mz-flex mz-flex-align-stretch' },
+	                            { className: 'mz-flex mz-dark mz-flex-align-stretch' },
 	                            _react2.default.createElement(_Navbar.MZNavbarGroup, { className: 'mz-flex-group-left' }),
 	                            _react2.default.createElement(
 	                                _Navbar.MZNavbarGroup,
@@ -22036,7 +22036,7 @@
 	                    null,
 	                    _react2.default.createElement(
 	                        _Navbar.MZNavbar,
-	                        { className: 'mz-flex mz-fixed-top mz-flex-align-stretch' },
+	                        { className: 'mz-flex mz-dark mz-fixed-top mz-shadow mz-flex-align-stretch' },
 	                        _react2.default.createElement(
 	                            _Navbar.MZNavbarGroup,
 	                            { className: 'mz-flex-group-left' },
@@ -22061,7 +22061,7 @@
 	                            _react2.default.createElement(
 	                                _Navbar.MZNavbarItem,
 	                                { href: 'https://github.com/kashjs/muszoo-react' },
-	                                'Source'
+	                                _react2.default.createElement('i', { className: 'fa fa-github', 'aria-hidden': 'true' })
 	                            )
 	                        )
 	                    ),
@@ -22105,9 +22105,9 @@
 	
 	var _Button = __webpack_require__(/*! muszoo-react/Button */ 174);
 	
-	var _Navbar = __webpack_require__(/*! muszoo-react/Navbar */ 176);
+	var _Navbar = __webpack_require__(/*! muszoo-react/Navbar */ 177);
 	
-	var _Sidebar = __webpack_require__(/*! muszoo-react/Sidebar */ 178);
+	var _Sidebar = __webpack_require__(/*! muszoo-react/Sidebar */ 179);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -22155,74 +22155,104 @@
 	                    'Buttons'
 	                ),
 	                _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'regular'
-	                ),
-	                _react2.default.createElement(
 	                    _Button.MZButton,
-	                    null,
-	                    'Default'
+	                    { className: 'mz-default' },
+	                    '.mz-default'
 	                ),
 	                _react2.default.createElement(
 	                    _Button.MZButton,
 	                    { className: 'mz-prime' },
-	                    'Prime'
+	                    '.mz-prime'
 	                ),
 	                _react2.default.createElement(
 	                    _Button.MZButton,
 	                    { className: 'mz-success' },
-	                    'Success'
+	                    '.mz-success'
 	                ),
 	                _react2.default.createElement(
 	                    _Button.MZButton,
 	                    { className: 'mz-info' },
-	                    'Info'
+	                    '.mz-info'
 	                ),
 	                _react2.default.createElement(
 	                    _Button.MZButton,
 	                    { className: 'mz-warning' },
-	                    'Warning'
+	                    '.mz-warning'
 	                ),
 	                _react2.default.createElement(
 	                    _Button.MZButton,
 	                    { className: 'mz-danger' },
-	                    'Danger'
+	                    '.mz-danger'
 	                ),
 	                _react2.default.createElement(
 	                    'p',
 	                    null,
-	                    'transparent'
+	                    '.mz-transparent'
 	                ),
 	                _react2.default.createElement(
 	                    _Button.MZButton,
-	                    { className: 'mz-transparent' },
-	                    'Default'
+	                    { className: 'mz-transparent mz-default' },
+	                    '.mz-default'
 	                ),
 	                _react2.default.createElement(
 	                    _Button.MZButton,
-	                    { className: 'mz-prime mz-transparent' },
-	                    'Prime'
+	                    { className: 'mz-transparent mz-prime' },
+	                    '.mz-prime'
 	                ),
 	                _react2.default.createElement(
 	                    _Button.MZButton,
-	                    { className: 'mz-success mz-transparent' },
-	                    'Success'
+	                    { className: 'mz-transparent mz-success' },
+	                    '.mz-success'
 	                ),
 	                _react2.default.createElement(
 	                    _Button.MZButton,
-	                    { className: 'mz-info mz-transparent' },
-	                    'Info'
+	                    { className: 'mz-transparent mz-info' },
+	                    '.mz-info'
 	                ),
 	                _react2.default.createElement(
 	                    _Button.MZButton,
-	                    { className: 'mz-warning mz-transparent' },
-	                    'Warning'
+	                    { className: 'mz-transparent mz-warning' },
+	                    '.mz-warning'
 	                ),
 	                _react2.default.createElement(
 	                    _Button.MZButton,
-	                    { className: 'mz-danger mz-transparent' },
-	                    'Danger'
+	                    { className: 'mz-transparent mz-danger' },
+	                    '.mz-danger'
+	                ),
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    '.mz-round'
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { className: 'mz-round mz-default' },
+	                    _react2.default.createElement('i', { className: 'fa fa-play', 'aria-hidden': 'true' })
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { className: 'mz-round mz-danger' },
+	                    _react2.default.createElement('i', { className: 'fa fa-stop', 'aria-hidden': 'true' })
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { className: 'mz-round mz-prime' },
+	                    _react2.default.createElement('i', { className: 'fa fa-pause', 'aria-hidden': 'true' })
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { className: 'mz-round mz-success' },
+	                    _react2.default.createElement('i', { className: 'fa fa-random', 'aria-hidden': 'true' })
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { className: 'mz-round mz-info' },
+	                    '.mz-info .mz-round'
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { className: 'mz-round mz-transparent mz-warning' },
+	                    '.mz-warning .mz-transparent .mz-round'
 	                ),
 	                _react2.default.createElement(
 	                    'h2',
@@ -22230,8 +22260,22 @@
 	                    'Navbar'
 	                ),
 	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    '.mz-dark'
+	                ),
+	                _react2.default.createElement(
 	                    _Navbar.MZNavbar,
-	                    { className: 'mz-flex mz-flex-align-stretch' },
+	                    { className: 'mz-flex mz-dark mz-flex-align-stretch' },
+	                    _react2.default.createElement(
+	                        _Navbar.MZNavbarGroup,
+	                        { className: 'mz-flex-group-left' },
+	                        _react2.default.createElement(
+	                            _Navbar.MZNavbarItem,
+	                            null,
+	                            _react2.default.createElement('i', { className: 'fa fa-bars' })
+	                        )
+	                    ),
 	                    _react2.default.createElement(
 	                        _Navbar.MZNavbarGroup,
 	                        { className: 'mz-flex-group-left' },
@@ -22243,25 +22287,11 @@
 	                    ),
 	                    _react2.default.createElement(
 	                        _Navbar.MZNavbarGroup,
-	                        { className: 'mz-flex-fluid' },
-	                        _react2.default.createElement(
-	                            _Navbar.MZNavbarItem,
-	                            { href: '#' },
-	                            'Source'
-	                        ),
-	                        _react2.default.createElement(
-	                            _Navbar.MZNavbarItem,
-	                            { href: '#' },
-	                            'Docs'
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        _Navbar.MZNavbarGroup,
 	                        { className: 'mz-flex-group-right' },
 	                        _react2.default.createElement(
 	                            _Navbar.MZNavbarItem,
-	                            { href: '#' },
-	                            'Signup'
+	                            null,
+	                            _react2.default.createElement('i', { className: 'fa fa-cog' })
 	                        )
 	                    )
 	                ),
@@ -22277,6 +22307,15 @@
 	                        _Navbar.MZNavbarGroup,
 	                        { className: 'mz-flex-group-left' },
 	                        _react2.default.createElement(
+	                            _Navbar.MZNavbarItem,
+	                            null,
+	                            _react2.default.createElement('i', { className: 'fa fa-bars' })
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        _Navbar.MZNavbarGroup,
+	                        { className: 'mz-flex-group-left' },
+	                        _react2.default.createElement(
 	                            _Navbar.MZNavbarBrand,
 	                            null,
 	                            'MusZoo React'
@@ -22284,25 +22323,11 @@
 	                    ),
 	                    _react2.default.createElement(
 	                        _Navbar.MZNavbarGroup,
-	                        { className: 'mz-flex-fluid' },
-	                        _react2.default.createElement(
-	                            _Navbar.MZNavbarItem,
-	                            { href: '#' },
-	                            'Source'
-	                        ),
-	                        _react2.default.createElement(
-	                            _Navbar.MZNavbarItem,
-	                            { href: '#' },
-	                            'Docs'
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        _Navbar.MZNavbarGroup,
 	                        { className: 'mz-flex-group-right' },
 	                        _react2.default.createElement(
 	                            _Navbar.MZNavbarItem,
-	                            { href: '#' },
-	                            'Signup'
+	                            null,
+	                            _react2.default.createElement('i', { className: 'fa fa-cog' })
 	                        )
 	                    )
 	                ),
@@ -22313,16 +22338,16 @@
 	                ),
 	                _react2.default.createElement(
 	                    _Button.MZButton,
-	                    { onClick: this.handleSidebarToggleDark.bind(self) },
-	                    'Regular Sidenav - Toggle'
+	                    { className: 'mz-default', onClick: this.handleSidebarToggleDark.bind(self) },
+	                    '.mz-dark'
 	                ),
 	                _react2.default.createElement(
 	                    _Sidebar.MZSidebar,
-	                    { className: 'mz-fixed-right',
+	                    { className: 'mz-fixed-right mz-dark',
 	                        active: this.state.showSidebarDark },
 	                    _react2.default.createElement(
 	                        _Navbar.MZNavbar,
-	                        { className: 'mz-flex mz-flex-align-stretch' },
+	                        { className: 'mz-flex mz-dark mz-flex-align-stretch' },
 	                        _react2.default.createElement(
 	                            _Navbar.MZNavbarGroup,
 	                            { className: 'mz-flex-group-left' },
@@ -22342,8 +22367,8 @@
 	                ),
 	                _react2.default.createElement(
 	                    _Button.MZButton,
-	                    { onClick: this.handleSidebarToggleLight.bind(self) },
-	                    'Light Sidenav - Toggle'
+	                    { className: 'mz-default', onClick: this.handleSidebarToggleLight.bind(self) },
+	                    '.mz-light'
 	                ),
 	                _react2.default.createElement(
 	                    _Sidebar.MZSidebar,
@@ -22421,6 +22446,8 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _TapAnimation = __webpack_require__(/*! ../TapAnimation/TapAnimation */ 176);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22445,7 +22472,11 @@
 	            return _react2.default.createElement(
 	                'button',
 	                { onClick: this.props.onClick, className: className },
-	                this.props.children
+	                _react2.default.createElement(
+	                    _TapAnimation.TapAnimationContent,
+	                    null,
+	                    this.props.children
+	                )
 	            );
 	        }
 	    }]);
@@ -22464,6 +22495,62 @@
 
 /***/ },
 /* 176 */
+/*!******************************************!*\
+  !*** ./src/TapAnimation/TapAnimation.js ***!
+  \******************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.TapAnimationContent = undefined;
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var TapAnimationContent = exports.TapAnimationContent = function (_React$Component) {
+	    _inherits(TapAnimationContent, _React$Component);
+	
+	    function TapAnimationContent() {
+	        _classCallCheck(this, TapAnimationContent);
+	
+	        return _possibleConstructorReturn(this, (TapAnimationContent.__proto__ || Object.getPrototypeOf(TapAnimationContent)).apply(this, arguments));
+	    }
+	
+	    _createClass(TapAnimationContent, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "span",
+	                null,
+	                _react2.default.createElement(
+	                    "span",
+	                    { className: "mz-tap-animation-text" },
+	                    this.props.children
+	                ),
+	                _react2.default.createElement("span", { className: "mz-tap-animation" })
+	            );
+	        }
+	    }]);
+	
+	    return TapAnimationContent;
+	}(_react2.default.Component);
+
+/***/ },
+/* 177 */
 /*!*****************************!*\
   !*** ./src/Navbar/index.js ***!
   \*****************************/
@@ -22475,7 +22562,7 @@
 	  value: true
 	});
 	
-	var _Navbar = __webpack_require__(/*! ./Navbar */ 177);
+	var _Navbar = __webpack_require__(/*! ./Navbar */ 178);
 	
 	Object.keys(_Navbar).forEach(function (key) {
 	  if (key === "default" || key === "__esModule") return;
@@ -22488,7 +22575,7 @@
 	});
 
 /***/ },
-/* 177 */
+/* 178 */
 /*!******************************!*\
   !*** ./src/Navbar/Navbar.js ***!
   \******************************/
@@ -22506,6 +22593,8 @@
 	var _react = __webpack_require__(/*! react */ 1);
 	
 	var _react2 = _interopRequireDefault(_react);
+	
+	var _TapAnimation = __webpack_require__(/*! ../TapAnimation/TapAnimation */ 176);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -22625,9 +22714,17 @@
 	        value: function render() {
 	            var className = 'mz-navbar-item ' + this.props.className;
 	            return _react2.default.createElement(
-	                'a',
-	                { type: 'button', onClick: this.props.onClick, className: className, href: this.props.href },
-	                this.props.children
+	                'div',
+	                { onClick: this.props.onClick, className: className },
+	                _react2.default.createElement(
+	                    _TapAnimation.TapAnimationContent,
+	                    null,
+	                    _react2.default.createElement(
+	                        'a',
+	                        { type: 'button', href: this.props.href },
+	                        this.props.children
+	                    )
+	                )
 	            );
 	        }
 	    }]);
@@ -22645,7 +22742,7 @@
 	};
 
 /***/ },
-/* 178 */
+/* 179 */
 /*!******************************!*\
   !*** ./src/Sidebar/index.js ***!
   \******************************/
@@ -22657,7 +22754,7 @@
 	  value: true
 	});
 	
-	var _Sidebar = __webpack_require__(/*! ./Sidebar */ 179);
+	var _Sidebar = __webpack_require__(/*! ./Sidebar */ 180);
 	
 	Object.keys(_Sidebar).forEach(function (key) {
 	  if (key === "default" || key === "__esModule") return;
@@ -22670,7 +22767,7 @@
 	});
 
 /***/ },
-/* 179 */
+/* 180 */
 /*!********************************!*\
   !*** ./src/Sidebar/Sidebar.js ***!
   \********************************/
