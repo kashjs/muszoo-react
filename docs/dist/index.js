@@ -22146,6 +22146,7 @@
 	        key: 'render',
 	        value: function render() {
 	            var self = this;
+	            this.disabledFlat = true;
 	            return _react2.default.createElement(
 	                'div',
 	                null,
@@ -22185,6 +22186,51 @@
 	                    '.mz-danger'
 	                ),
 	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { className: 'mz-default', disabled: this.disabledFlat },
+	                    'disabled'
+	                ),
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    '.mz-flat'
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { className: 'mz-flat mz-default' },
+	                    '.mz-default'
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { className: 'mz-flat mz-prime' },
+	                    '.mz-prime'
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { className: 'mz-flat mz-success' },
+	                    '.mz-success'
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { className: 'mz-flat mz-info' },
+	                    '.mz-info'
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { className: 'mz-flat mz-warning' },
+	                    '.mz-warning'
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { className: 'mz-flat mz-danger' },
+	                    '.mz-danger'
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { className: 'mz-flat mz-danger', disabled: this.disabledFlat },
+	                    'disabled'
+	                ),
+	                _react2.default.createElement(
 	                    'p',
 	                    null,
 	                    '.mz-transparent'
@@ -22220,6 +22266,11 @@
 	                    '.mz-danger'
 	                ),
 	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { className: 'mz-transparent mz-danger', disabled: this.disabledFlat },
+	                    'disabled'
+	                ),
+	                _react2.default.createElement(
 	                    'p',
 	                    null,
 	                    '.mz-round'
@@ -22253,6 +22304,11 @@
 	                    _Button.MZButton,
 	                    { className: 'mz-round mz-transparent mz-warning' },
 	                    '.mz-warning .mz-transparent .mz-round'
+	                ),
+	                _react2.default.createElement(
+	                    _Button.MZButton,
+	                    { className: 'mz-round mz-success', disabled: this.disabledFlat },
+	                    'disabled'
 	                ),
 	                _react2.default.createElement(
 	                    'h2',
@@ -22471,7 +22527,7 @@
 	            var className = 'mz-button ' + this.props.className;
 	            return _react2.default.createElement(
 	                'button',
-	                { onClick: this.props.onClick, className: className },
+	                { onClick: this.props.onClick, className: className, disabled: this.props.disabled },
 	                _react2.default.createElement(
 	                    _TapAnimation.TapAnimationContent,
 	                    null,
