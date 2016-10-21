@@ -41,7 +41,9 @@ export class App extends React.Component {
                         <MZNavbarBrand>MusZoo React</MZNavbarBrand>
                     </MZNavbarGroup>
                     <MZNavbarGroup className="mz-flex-group-right">
-                        <MZNavbarItem href="https://github.com/kashjs/muszoo-react">Source</MZNavbarItem>
+                        <MZNavbarItem href="https://github.com/kashjs/muszoo-react">
+                            <i className="fa fa-github" aria-hidden="true"></i>
+                        </MZNavbarItem>
                     </MZNavbarGroup>
                 </MZNavbar>
                 <Examples></Examples>

@@ -14,7 +14,7 @@ $mzButtonHeight: 40px;
   color: $textColor;
 
 
-  &.mz-transparent {
+  &.mz-transparent, &.mz-flat {
     background: transparent;
     backgorund-color: none;
     border: 1px solid darken($color, 10%);
@@ -24,6 +24,10 @@ $mzButtonHeight: 40px;
       color: $textColor;
     }
     @include mzTapAnimationContainer(lighten($color, 30%));
+  }
+
+  &.mz-flat {
+    border: 1px solid rgba(0, 0, 0, 0);
   }
 
   &.mz-round {

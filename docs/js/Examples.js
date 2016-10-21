@@ -22,6 +22,7 @@ export class Examples extends React.Component {
 
     render() {
         var self = this;
+        this.disabledFlat = true;
         return <div>
             <h2>Buttons</h2>
             <MZButton className="mz-default">.mz-default</MZButton>
@@ -30,6 +31,16 @@ export class Examples extends React.Component {
             <MZButton className="mz-info">.mz-info</MZButton>
             <MZButton className="mz-warning">.mz-warning</MZButton>
             <MZButton className="mz-danger">.mz-danger</MZButton>
+            <MZButton className="mz-default" disabled={this.disabledFlat}>disabled</MZButton>
+
+            <p>.mz-flat</p>
+            <MZButton className="mz-flat mz-default">.mz-default</MZButton>
+            <MZButton className="mz-flat mz-prime">.mz-prime</MZButton>
+            <MZButton className="mz-flat mz-success">.mz-success</MZButton>
+            <MZButton className="mz-flat mz-info">.mz-info</MZButton>
+            <MZButton className="mz-flat mz-warning">.mz-warning</MZButton>
+            <MZButton className="mz-flat mz-danger">.mz-danger</MZButton>
+            <MZButton className="mz-flat mz-danger" disabled={this.disabledFlat}>disabled</MZButton>
 
             <p>.mz-transparent</p>
             <MZButton className="mz-transparent mz-default">.mz-default</MZButton>
@@ -38,6 +49,7 @@ export class Examples extends React.Component {
             <MZButton className="mz-transparent mz-info">.mz-info</MZButton>
             <MZButton className="mz-transparent mz-warning">.mz-warning</MZButton>
             <MZButton className="mz-transparent mz-danger">.mz-danger</MZButton>
+            <MZButton className="mz-transparent mz-danger" disabled={this.disabledFlat}>disabled</MZButton>
 
             <p>.mz-round</p>
             <MZButton className="mz-round mz-default"><i className="fa fa-play" aria-hidden="true"></i></MZButton>
@@ -46,6 +58,7 @@ export class Examples extends React.Component {
             <MZButton className="mz-round mz-success"><i className="fa fa-random" aria-hidden="true"></i></MZButton>
             <MZButton className="mz-round mz-info">.mz-info .mz-round</MZButton>
             <MZButton className="mz-round mz-transparent mz-warning">.mz-warning .mz-transparent .mz-round</MZButton>
+            <MZButton className="mz-round mz-success" disabled={this.disabledFlat}>disabled</MZButton>
 
 
             <h2>Navbar</h2>

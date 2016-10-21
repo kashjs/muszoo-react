@@ -17,6 +17,10 @@
   user-select: none; }
   .mz-button:focus {
     outline: 0; }
+  .mz-button[disabled] {
+    cursor: default;
+    pointer-events: none;
+    opacity: .6; }
   .mz-button.mz-default {
     box-sizing: border-box;
     overflow: hidden;
@@ -32,7 +36,7 @@
     position: relative;
     overflow: hidden;
     z-index: 1; }
-    .mz-button.mz-default.mz-transparent {
+    .mz-button.mz-default.mz-transparent, .mz-button.mz-default.mz-flat {
       background: transparent;
       backgorund-color: none;
       border: 1px solid #b5bcc1;
@@ -40,9 +44,9 @@
       position: relative;
       overflow: hidden;
       z-index: 1; }
-      .mz-button.mz-default.mz-transparent.mz-default {
+      .mz-button.mz-default.mz-transparent.mz-default, .mz-button.mz-default.mz-flat.mz-default {
         color: #333333; }
-      .mz-button.mz-default.mz-transparent .mz-tap-animation:before, .mz-button.mz-default.mz-transparent .mz-tap-animation:after {
+      .mz-button.mz-default.mz-transparent .mz-tap-animation:before, .mz-button.mz-default.mz-transparent .mz-tap-animation:after, .mz-button.mz-default.mz-flat .mz-tap-animation:before, .mz-button.mz-default.mz-flat .mz-tap-animation:after {
         content: "";
         box-sizing: border-box;
         background: #d9d9d9;
@@ -56,15 +60,17 @@
         right: -50%;
         opacity: 0;
         transition: all 1s ease; }
-      .mz-button.mz-default.mz-transparent .mz-tap-animation:after {
+      .mz-button.mz-default.mz-transparent .mz-tap-animation:after, .mz-button.mz-default.mz-flat .mz-tap-animation:after {
         background: transparent; }
-      .mz-button.mz-default.mz-transparent:active .mz-tap-animation:before {
+      .mz-button.mz-default.mz-transparent:active .mz-tap-animation:before, .mz-button.mz-default.mz-flat:active .mz-tap-animation:before {
         opacity: 1;
         top: 50%;
         bottom: 50%;
         left: 50%;
         right: 50%;
         transition: 0s; }
+    .mz-button.mz-default.mz-flat {
+      border: 1px solid transparent; }
     .mz-button.mz-default.mz-round {
       border-radius: 40px; }
     .mz-button.mz-default .mz-tap-animation:before, .mz-button.mz-default .mz-tap-animation:after {
@@ -105,7 +111,7 @@
     position: relative;
     overflow: hidden;
     z-index: 1; }
-    .mz-button.mz-prime.mz-transparent {
+    .mz-button.mz-prime.mz-transparent, .mz-button.mz-prime.mz-flat {
       background: transparent;
       backgorund-color: none;
       border: 1px solid #217dbb;
@@ -113,9 +119,9 @@
       position: relative;
       overflow: hidden;
       z-index: 1; }
-      .mz-button.mz-prime.mz-transparent.mz-default {
+      .mz-button.mz-prime.mz-transparent.mz-default, .mz-button.mz-prime.mz-flat.mz-default {
         color: white; }
-      .mz-button.mz-prime.mz-transparent .mz-tap-animation:before, .mz-button.mz-prime.mz-transparent .mz-tap-animation:after {
+      .mz-button.mz-prime.mz-transparent .mz-tap-animation:before, .mz-button.mz-prime.mz-transparent .mz-tap-animation:after, .mz-button.mz-prime.mz-flat .mz-tap-animation:before, .mz-button.mz-prime.mz-flat .mz-tap-animation:after {
         content: "";
         box-sizing: border-box;
         background: #75b9e7;
@@ -129,15 +135,17 @@
         right: -50%;
         opacity: 0;
         transition: all 1s ease; }
-      .mz-button.mz-prime.mz-transparent .mz-tap-animation:after {
+      .mz-button.mz-prime.mz-transparent .mz-tap-animation:after, .mz-button.mz-prime.mz-flat .mz-tap-animation:after {
         background: transparent; }
-      .mz-button.mz-prime.mz-transparent:active .mz-tap-animation:before {
+      .mz-button.mz-prime.mz-transparent:active .mz-tap-animation:before, .mz-button.mz-prime.mz-flat:active .mz-tap-animation:before {
         opacity: 1;
         top: 50%;
         bottom: 50%;
         left: 50%;
         right: 50%;
         transition: 0s; }
+    .mz-button.mz-prime.mz-flat {
+      border: 1px solid transparent; }
     .mz-button.mz-prime.mz-round {
       border-radius: 40px; }
     .mz-button.mz-prime .mz-tap-animation:before, .mz-button.mz-prime .mz-tap-animation:after {
@@ -178,7 +186,7 @@
     position: relative;
     overflow: hidden;
     z-index: 1; }
-    .mz-button.mz-success.mz-transparent {
+    .mz-button.mz-success.mz-transparent, .mz-button.mz-success.mz-flat {
       background: transparent;
       backgorund-color: none;
       border: 1px solid #148f77;
@@ -186,9 +194,9 @@
       position: relative;
       overflow: hidden;
       z-index: 1; }
-      .mz-button.mz-success.mz-transparent.mz-default {
+      .mz-button.mz-success.mz-transparent.mz-default, .mz-button.mz-success.mz-flat.mz-default {
         color: white; }
-      .mz-button.mz-success.mz-transparent .mz-tap-animation:before, .mz-button.mz-success.mz-transparent .mz-tap-animation:after {
+      .mz-button.mz-success.mz-transparent .mz-tap-animation:before, .mz-button.mz-success.mz-transparent .mz-tap-animation:after, .mz-button.mz-success.mz-flat .mz-tap-animation:before, .mz-button.mz-success.mz-flat .mz-tap-animation:after {
         content: "";
         box-sizing: border-box;
         background: #3ee4c4;
@@ -202,15 +210,17 @@
         right: -50%;
         opacity: 0;
         transition: all 1s ease; }
-      .mz-button.mz-success.mz-transparent .mz-tap-animation:after {
+      .mz-button.mz-success.mz-transparent .mz-tap-animation:after, .mz-button.mz-success.mz-flat .mz-tap-animation:after {
         background: transparent; }
-      .mz-button.mz-success.mz-transparent:active .mz-tap-animation:before {
+      .mz-button.mz-success.mz-transparent:active .mz-tap-animation:before, .mz-button.mz-success.mz-flat:active .mz-tap-animation:before {
         opacity: 1;
         top: 50%;
         bottom: 50%;
         left: 50%;
         right: 50%;
         transition: 0s; }
+    .mz-button.mz-success.mz-flat {
+      border: 1px solid transparent; }
     .mz-button.mz-success.mz-round {
       border-radius: 40px; }
     .mz-button.mz-success .mz-tap-animation:before, .mz-button.mz-success .mz-tap-animation:after {
@@ -251,7 +261,7 @@
     position: relative;
     overflow: hidden;
     z-index: 1; }
-    .mz-button.mz-info.mz-transparent {
+    .mz-button.mz-info.mz-transparent, .mz-button.mz-info.mz-flat {
       background: transparent;
       backgorund-color: none;
       border: 1px solid #2d9fcb;
@@ -259,9 +269,9 @@
       position: relative;
       overflow: hidden;
       z-index: 1; }
-      .mz-button.mz-info.mz-transparent.mz-default {
+      .mz-button.mz-info.mz-transparent.mz-default, .mz-button.mz-info.mz-flat.mz-default {
         color: white; }
-      .mz-button.mz-info.mz-transparent .mz-tap-animation:before, .mz-button.mz-info.mz-transparent .mz-tap-animation:after {
+      .mz-button.mz-info.mz-transparent .mz-tap-animation:before, .mz-button.mz-info.mz-transparent .mz-tap-animation:after, .mz-button.mz-info.mz-flat .mz-tap-animation:before, .mz-button.mz-info.mz-flat .mz-tap-animation:after {
         content: "";
         box-sizing: border-box;
         background: #91cfe7;
@@ -275,15 +285,17 @@
         right: -50%;
         opacity: 0;
         transition: all 1s ease; }
-      .mz-button.mz-info.mz-transparent .mz-tap-animation:after {
+      .mz-button.mz-info.mz-transparent .mz-tap-animation:after, .mz-button.mz-info.mz-flat .mz-tap-animation:after {
         background: transparent; }
-      .mz-button.mz-info.mz-transparent:active .mz-tap-animation:before {
+      .mz-button.mz-info.mz-transparent:active .mz-tap-animation:before, .mz-button.mz-info.mz-flat:active .mz-tap-animation:before {
         opacity: 1;
         top: 50%;
         bottom: 50%;
         left: 50%;
         right: 50%;
         transition: 0s; }
+    .mz-button.mz-info.mz-flat {
+      border: 1px solid transparent; }
     .mz-button.mz-info.mz-round {
       border-radius: 40px; }
     .mz-button.mz-info .mz-tap-animation:before, .mz-button.mz-info .mz-tap-animation:after {
@@ -324,7 +336,7 @@
     position: relative;
     overflow: hidden;
     z-index: 1; }
-    .mz-button.mz-warning.mz-transparent {
+    .mz-button.mz-warning.mz-transparent, .mz-button.mz-warning.mz-flat {
       background: transparent;
       backgorund-color: none;
       border: 1px solid #c29d0b;
@@ -332,9 +344,9 @@
       position: relative;
       overflow: hidden;
       z-index: 1; }
-      .mz-button.mz-warning.mz-transparent.mz-default {
+      .mz-button.mz-warning.mz-transparent.mz-default, .mz-button.mz-warning.mz-flat.mz-default {
         color: white; }
-      .mz-button.mz-warning.mz-transparent .mz-tap-animation:before, .mz-button.mz-warning.mz-transparent .mz-tap-animation:after {
+      .mz-button.mz-warning.mz-transparent .mz-tap-animation:before, .mz-button.mz-warning.mz-transparent .mz-tap-animation:after, .mz-button.mz-warning.mz-flat .mz-tap-animation:before, .mz-button.mz-warning.mz-flat .mz-tap-animation:after {
         content: "";
         box-sizing: border-box;
         background: #f5d657;
@@ -348,15 +360,17 @@
         right: -50%;
         opacity: 0;
         transition: all 1s ease; }
-      .mz-button.mz-warning.mz-transparent .mz-tap-animation:after {
+      .mz-button.mz-warning.mz-transparent .mz-tap-animation:after, .mz-button.mz-warning.mz-flat .mz-tap-animation:after {
         background: transparent; }
-      .mz-button.mz-warning.mz-transparent:active .mz-tap-animation:before {
+      .mz-button.mz-warning.mz-transparent:active .mz-tap-animation:before, .mz-button.mz-warning.mz-flat:active .mz-tap-animation:before {
         opacity: 1;
         top: 50%;
         bottom: 50%;
         left: 50%;
         right: 50%;
         transition: 0s; }
+    .mz-button.mz-warning.mz-flat {
+      border: 1px solid transparent; }
     .mz-button.mz-warning.mz-round {
       border-radius: 40px; }
     .mz-button.mz-warning .mz-tap-animation:before, .mz-button.mz-warning .mz-tap-animation:after {
@@ -397,7 +411,7 @@
     position: relative;
     overflow: hidden;
     z-index: 1; }
-    .mz-button.mz-danger.mz-transparent {
+    .mz-button.mz-danger.mz-transparent, .mz-button.mz-danger.mz-flat {
       background: transparent;
       backgorund-color: none;
       border: 1px solid #d62c1a;
@@ -405,9 +419,9 @@
       position: relative;
       overflow: hidden;
       z-index: 1; }
-      .mz-button.mz-danger.mz-transparent.mz-default {
+      .mz-button.mz-danger.mz-transparent.mz-default, .mz-button.mz-danger.mz-flat.mz-default {
         color: white; }
-      .mz-button.mz-danger.mz-transparent .mz-tap-animation:before, .mz-button.mz-danger.mz-transparent .mz-tap-animation:after {
+      .mz-button.mz-danger.mz-transparent .mz-tap-animation:before, .mz-button.mz-danger.mz-transparent .mz-tap-animation:after, .mz-button.mz-danger.mz-flat .mz-tap-animation:before, .mz-button.mz-danger.mz-flat .mz-tap-animation:after {
         content: "";
         box-sizing: border-box;
         background: #ef8b80;
@@ -421,15 +435,17 @@
         right: -50%;
         opacity: 0;
         transition: all 1s ease; }
-      .mz-button.mz-danger.mz-transparent .mz-tap-animation:after {
+      .mz-button.mz-danger.mz-transparent .mz-tap-animation:after, .mz-button.mz-danger.mz-flat .mz-tap-animation:after {
         background: transparent; }
-      .mz-button.mz-danger.mz-transparent:active .mz-tap-animation:before {
+      .mz-button.mz-danger.mz-transparent:active .mz-tap-animation:before, .mz-button.mz-danger.mz-flat:active .mz-tap-animation:before {
         opacity: 1;
         top: 50%;
         bottom: 50%;
         left: 50%;
         right: 50%;
         transition: 0s; }
+    .mz-button.mz-danger.mz-flat {
+      border: 1px solid transparent; }
     .mz-button.mz-danger.mz-round {
       border-radius: 40px; }
     .mz-button.mz-danger .mz-tap-animation:before, .mz-button.mz-danger .mz-tap-animation:after {
@@ -513,6 +529,10 @@ a {
     z-index: 1; }
     .mz-navbar.mz-dark .mz-navbar-item:focus {
       outline: 0; }
+    .mz-navbar.mz-dark .mz-navbar-item[disabled] {
+      cursor: default;
+      pointer-events: none;
+      opacity: .6; }
     .mz-navbar.mz-dark .mz-navbar-item .mz-tap-animation:before, .mz-navbar.mz-dark .mz-navbar-item .mz-tap-animation:after {
       content: "";
       box-sizing: border-box;
@@ -590,6 +610,10 @@ a {
     z-index: 1; }
     .mz-navbar.mz-light .mz-navbar-item:focus {
       outline: 0; }
+    .mz-navbar.mz-light .mz-navbar-item[disabled] {
+      cursor: default;
+      pointer-events: none;
+      opacity: .6; }
     .mz-navbar.mz-light .mz-navbar-item .mz-tap-animation:before, .mz-navbar.mz-light .mz-navbar-item .mz-tap-animation:after {
       content: "";
       box-sizing: border-box;
