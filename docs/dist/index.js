@@ -22012,7 +22012,7 @@
 	                            active: this.state.showSidebar },
 	                        _react2.default.createElement(
 	                            _Navbar.MZNavbar,
-	                            { className: 'mz-flex mz-dark mz-flex-align-stretch' },
+	                            { className: 'mz-flex mz-dark mz-skinny mz-flex-align-stretch' },
 	                            _react2.default.createElement(_Navbar.MZNavbarGroup, { className: 'mz-flex-group-left' }),
 	                            _react2.default.createElement(
 	                                _Navbar.MZNavbarGroup,
@@ -22036,7 +22036,7 @@
 	                    null,
 	                    _react2.default.createElement(
 	                        _Navbar.MZNavbar,
-	                        { className: 'mz-flex mz-dark mz-fixed-top mz-shadow mz-flex-align-stretch' },
+	                        { className: 'mz-flex mz-dark mz-skinny mz-fixed-top mz-shadow mz-flex-align-stretch' },
 	                        _react2.default.createElement(
 	                            _Navbar.MZNavbarGroup,
 	                            { className: 'mz-flex-group-left' },
