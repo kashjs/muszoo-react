@@ -1,6 +1,8 @@
+$mzNavHeight: 50px;
+$mzNavSkinnyHeight: 40px;
+
 @mixin mzGenerateNavbar($color, $textColor) {
   @include mzElementReset();
-  $mzNavHeight: 60px;
   height: $mzNavHeight;
   line-height: $mzNavHeight;
   font-size: $mzNavbarFontSize;
@@ -10,6 +12,11 @@
 
   &.mz-shadow {
     @include mzShadow(5px);
+  }
+
+  &.mz-skinny {
+    height: $mzNavSkinnyHeight;
+    line-height: $mzNavSkinnyHeight;
   }
 
   &.mz-fixed-top {

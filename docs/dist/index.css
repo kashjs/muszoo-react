@@ -481,14 +481,17 @@ a {
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
-  height: 60px;
-  line-height: 60px;
+  height: 50px;
+  line-height: 50px;
   font-size: 15.6px;
   background-color: #2b2935;
   color: white;
   border: 1px solid black; }
   .mz-navbar.mz-dark.mz-shadow {
     box-shadow: 0 0 5px 0 #333333; }
+  .mz-navbar.mz-dark.mz-skinny {
+    height: 40px;
+    line-height: 40px; }
   .mz-navbar.mz-dark.mz-fixed-top {
     position: fixed;
     z-index: 1000;
@@ -562,14 +565,17 @@ a {
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
-  height: 60px;
-  line-height: 60px;
+  height: 50px;
+  line-height: 50px;
   font-size: 15.6px;
   background-color: #efefef;
   color: #333333;
   border: 1px solid #bcbcbc; }
   .mz-navbar.mz-light.mz-shadow {
     box-shadow: 0 0 5px 0 #333333; }
+  .mz-navbar.mz-light.mz-skinny {
+    height: 40px;
+    line-height: 40px; }
   .mz-navbar.mz-light.mz-fixed-top {
     position: fixed;
     z-index: 1000;
