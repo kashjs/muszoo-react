@@ -25,22 +25,22 @@ export class Examples extends React.Component {
         this.disabledFlat = true;
         return <div>
             <h2>Buttons</h2>
-            <MZButton mzDefault>mzDefault</MZButton>
-            <MZButton mzPrimary>mzPrimary</MZButton>
-            <MZButton mzSuccess>mzPrimary</MZButton>
-            <MZButton mzInfo>mzPrimary</MZButton>
-            <MZButton mzWarning>mzPrimary</MZButton>
-            <MZButton mzDanger>mzPrimary</MZButton>
-            <MZButton mzDefault disabled={this.disabledFlat}>disabled</MZButton>
+            <MZButton className="mz-default">.mz-default</MZButton>
+            <MZButton className="mz-prime">.mz-prime</MZButton>
+            <MZButton className="mz-success">.mz-success</MZButton>
+            <MZButton className="mz-info">.mz-info</MZButton>
+            <MZButton className="mz-warning">.mz-warning</MZButton>
+            <MZButton className="mz-danger">.mz-danger</MZButton>
+            <MZButton className="mz-default" disabled={this.disabledFlat}>disabled</MZButton>
 
             <p>.mz-flat</p>
-        <MZButton mzDefault mzFlat>mzDefault mzFlat</MZButton>
-        <MZButton mzPrimary mzFlat>mzPrimary mzFlat</MZButton>
-        <MZButton mzSuccess mzFlat>mzPrimary mzFlat</MZButton>
-        <MZButton mzInfo mzFlat>mzPrimary mzFlat</MZButton>
-        <MZButton mzWarning mzFlat>mzPrimary mzFlat</MZButton>
-        <MZButton mzDanger mzFlat>mzPrimary mzFlat</MZButton>
-        <MZButton mzDefault  mzFlat disabled={this.disabledFlat}>disabled mzFlat</MZButton>
+            <MZButton className="mz-flat mz-default">.mz-default</MZButton>
+            <MZButton className="mz-flat mz-prime">.mz-prime</MZButton>
+            <MZButton className="mz-flat mz-success">.mz-success</MZButton>
+            <MZButton className="mz-flat mz-info">.mz-info</MZButton>
+            <MZButton className="mz-flat mz-warning">.mz-warning</MZButton>
+            <MZButton className="mz-flat mz-danger">.mz-danger</MZButton>
+            <MZButton className="mz-flat mz-danger" disabled={this.disabledFlat}>disabled</MZButton>
 
             <p>.mz-transparent</p>
             <MZButton className="mz-transparent mz-default">.mz-default</MZButton>
@@ -59,7 +59,6 @@ export class Examples extends React.Component {
             <MZButton className="mz-round mz-info">.mz-info .mz-round</MZButton>
             <MZButton className="mz-round mz-transparent mz-warning">.mz-warning .mz-transparent .mz-round</MZButton>
             <MZButton className="mz-round mz-success" disabled={this.disabledFlat}>disabled</MZButton>
-
 
             <h2>Navbar</h2>
             <p>.mz-dark</p>

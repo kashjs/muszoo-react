@@ -8,7 +8,7 @@ module.exports = {
         contentBase: "./docs/",
         inline: true,
         port: 4000,
-        host: "localhost"
+        host: "10.0.0.31"
     },
     output: {
         path: __dirname + "/docs/dist",
@@ -16,16 +16,16 @@ module.exports = {
         filename: "index.js"
     },
     resolve: {
-        extensions: ['', '.js', '.md', '.txt'],
+        extensions: ['.js', '.md', '.txt'],
         alias: {
             'muszoo-react': __dirname + '/src',
         },
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.js$/,
-                loaders: [
+                use: [
                     'babel-loader'
                 ],
                 exclude: /node_modules/,

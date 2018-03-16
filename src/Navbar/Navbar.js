@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {TapAnimationContent} from '../TapAnimation/TapAnimation';
 
 export class MZNavbar extends React.Component {
@@ -9,7 +10,7 @@ export class MZNavbar extends React.Component {
 }
 
 MZNavbar.propTypes = {
-    className: React.PropTypes.string
+    className: PropTypes.string
 };
 
 MZNavbar.defaultProps = {
@@ -25,7 +26,7 @@ export class MZNavbarGroup extends React.Component {
 }
 
 MZNavbarGroup.propTypes = {
-    className: React.PropTypes.string
+    className: PropTypes.string
 };
 
 MZNavbarGroup.defaultProps = {
@@ -41,7 +42,7 @@ export class MZNavbarBrand extends React.Component {
 }
 
 MZNavbarBrand.propTypes = {
-    className: React.PropTypes.string
+    className: PropTypes.string
 };
 
 MZNavbarBrand.defaultProps = {
@@ -61,8 +62,8 @@ export class MZNavbarItem extends React.Component {
 }
 
 MZNavbarItem.propTypes = {
-    className: React.PropTypes.string,
-    href: React.PropTypes.string
+    className: PropTypes.string,
+    href: PropTypes.string
 };
 
 MZNavbarItem.defaultProps = {

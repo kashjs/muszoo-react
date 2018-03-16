@@ -1,17 +1,17 @@
 $mzButtonHeight: 40px;
 
 @mixin mzGenerateButton($color, $padding, $textColor: $mzCTextLight) {
-  //box-sizing: border-box;
-  //overflow: hidden;
-  //font-size: $mzButtonFontSize;
-  //font-weight: $mzButtonFontWeight;
-  //border: 1px solid transparent;
-  //border: 1px solid rgba(0, 0, 0, 0);
-  //background: $color;
-  //height: $mzButtonHeight;
-  //padding: 0 $mzPL4;
-  //border-radius: $mzBtnRadius;
-  //color: $textColor;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: $mzButtonFontSize;
+  font-weight: $mzButtonFontWeight;
+  border: 1px solid transparent;
+  border: 1px solid rgba(0, 0, 0, 0);
+  background: $color;
+  height: $mzButtonHeight;
+  padding: 0 $mzPL4;
+  border-radius: $mzBtnRadius;
+  color: $textColor;
 
 
   &.mz-transparent, &.mz-flat {

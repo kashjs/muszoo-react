@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export class MZSidebar extends React.Component {
     render() {
@@ -10,8 +11,8 @@ export class MZSidebar extends React.Component {
 }
 
 MZSidebar.propTypes = {
-    className: React.PropTypes.string,
-    active: React.PropTypes.bool
+    className: PropTypes.string,
+    active: PropTypes.bool
 };
 
 MZSidebar.defaultProps = {
